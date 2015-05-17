@@ -3,8 +3,7 @@
         {
             "label": "Home",
             "key": "home",
-            "href": "/",
-            "background_url": "images/home-bg.jpg"
+            "href": "/"
         }
     ]
 }
