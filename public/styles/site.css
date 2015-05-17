@@ -4903,6 +4903,12 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 #header {
   margin-top: 30px; }
 

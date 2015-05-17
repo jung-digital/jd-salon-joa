@@ -1,5 +1,9 @@
 var _ = require('underscore');
 
+/**
+    Load configuration.
+*/
+var config = require('../config.json');
 
 /**
 	Initialises the standard view locals
@@ -8,13 +12,9 @@ var _ = require('underscore');
 exports.initLocals = function(req, res, next) {
 	
 	var locals = res.locals;
-	
-	locals.navLinks = [
-		{ label: 'Home',		key: 'home',		href: '/' },
-		{ label: 'Gallery',		key: 'gallery',		href: '/gallery' },
-		{ label: 'Contact',		key: 'contact',		href: '/contact' }
-	];
-	
+
+	locals.navLinks = config.pages.map(function (i) { return {label: i.label, key: i.key, href: i.href};})	
+
 	locals.user = req.user;
 	
 	next();

@@ -22,8 +22,8 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': 'xG{X>z~Qxmc:%]SEeTD;=SUL<f!h)h<FM9RLTCg}hkhs-l1iO*bb2z"i6yVG7rsB'
-
+	'cookie secret': 'xG{X>z~Qxmc:%]SEeTD;=SUL<f!h)h<FM9RLTCg}hkhs-l1iO*bb2z"i6yVG7rsB',
+    'mongo': process.env.MONGO_URI || 'mongodb://23.253.173.33/salonjoa'
 });
 
 keystone.import('models');
