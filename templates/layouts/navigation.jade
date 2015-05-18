@@ -1,24 +1,16 @@
-.col-lg-3
-  .sidebar-nav
-    #logo
-      a.navbar-brand(href='/')
-        img(src='/images/logo.png')
-    div(role="navigation").navbar
-      .container-fluid
-        .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-        .collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-left
-            each link in navLinks
-              li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-          ul.nav.navbar-nav.navbar-right
-            if user
-              if user.canAccessKeystone
-                li: a(href='/keystone') Open Keystone
-              li: a(href='/keystone/signout') Sign Out
-            else
-              li: a(href='/keystone/signin') Sign In
+.sidebar-nav
+  #logo
+    a(href='/')
+      img(src='/images/logo.png')
+  div(role="navigation").navbar.menu
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      .collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-left
+          each link in navLinks
+            li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label

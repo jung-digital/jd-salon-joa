@@ -1,13 +1,19 @@
 html {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: $blue-dark;
+  background-repeat: no-repeat;
 }
 
 body {
     background: none;
     margin:0;
+}
+
+a {
+  color: $blue-dark;
 }
 
 #header {
@@ -22,17 +28,17 @@ body {
 }
 
 .centre {
-    margin-left:30%;
-    margin-right:30%;
-    min-width: 900px;
-    max-width: 1200px;
-    display:block;
+  margin-left:30%;
+  margin-right:30%;
+  min-width: 900px;
+  max-width: 1200px;
+  display:block;
 }
 
 .gallery-image img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* make sidebar nav vertical */ 
@@ -55,6 +61,21 @@ body {
   }
 }
 
-#logo {
-    height:150px;
+.sidebar-nav {
+  font-weight: bold;
+
+  .menu {
+    background-color: $blue-light;
+  }
+
+  #logo {
+    text-align:center;
+    background-color: rgba(0,0,0,0.25);
+    padding-top:25px;
+    padding-bottom:15px;
+  }
+
+  ul {
+    padding-left:30px;
+  }
 }
