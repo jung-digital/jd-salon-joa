@@ -5,6 +5,10 @@ html {
     background-size: cover;
 }
 
+body {
+    background: none;
+}
+
 #header {
 	margin-top: 30px;
 }
@@ -14,6 +18,14 @@ html {
 	border-top: 1px solid $gray-lighter;
 	padding-top: 30px;
 	color: $gray-light;
+}
+
+.centre {
+    margin-left:30%;
+    margin-right:30%;
+    min-width: 900px;
+    max-width: 1200px;
+    display:block;
 }
 
 .gallery-image img{
