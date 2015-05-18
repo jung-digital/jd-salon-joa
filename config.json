@@ -3,7 +3,38 @@
         {
             "label": "Home",
             "key": "home",
-            "href": "/"
+            "href": "/",
+            "showInNav": false
+        },
+        {
+        	"label": "Services",
+        	"key":"services",
+        	"href":"/services",
+        	"showInNav": true
+        },
+        {
+        	"label": "Our Team",
+        	"key":"ourTeam",
+        	"href":"/ourTeam",
+        	"showInNav": true
+        },
+        {
+        	"label": "The Salon",
+        	"key":"theSalon",
+        	"href":"/theSalon",
+        	"showInNav": true
+        },
+        {
+        	"label": "Gallery",
+        	"key":"gallery",
+        	"href":"/gallery",
+        	"showInNav": true
+        },
+        {
+        	"label": "Events",
+        	"key":"events",
+        	"href":"/events",
+        	"showInNav": true
         }
     ]
 }

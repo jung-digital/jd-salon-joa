@@ -7,6 +7,7 @@ html {
 
 body {
     background: none;
+    margin:0;
 }
 
 #header {
@@ -32,4 +33,28 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+#logo {
+    height:150px;
 }

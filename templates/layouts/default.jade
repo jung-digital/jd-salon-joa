@@ -31,11 +31,10 @@ html
 
       +flash-messages(messages)
 
-      .centre
-        .container
-          include header.jade
-          block content
-          include footer.jade
+      .container
+        include header.jade
+        block content
+        include footer.jade
 
     script(src='/js/jquery/jquery-1.11.2.min.js')
     script(src='/js/bootstrap/bootstrap-3.4.4.min.js')
