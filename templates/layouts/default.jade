@@ -33,11 +33,12 @@ html
 
       .container.main
         include header.jade
-      .bg-blue-darker.skew-neg-slight
-        .bg-blue-dark.skew-pos-slight
-          .skew-pos-full
-            block content
-          include footer.jade
+      .pos-relative
+        .bg-blue-darker.skew-neg-slight
+          .bg-blue-dark.skew-pos-slight
+            .skew-pos-full.clearfix
+              block content
+              include footer.jade
 
     script(src='/js/jquery/jquery-1.11.2.min.js')
     script(src='/js/bootstrap/bootstrap-3.4.4.min.js')

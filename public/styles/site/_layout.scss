@@ -5,6 +5,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    font-family: exoThin;
 }
 
 html {
@@ -20,6 +21,11 @@ html {
 body {
     background: none;
     margin:0;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
 
 a {
@@ -78,13 +84,14 @@ a {
   .menu {
     padding-top:40px;
     padding-bottom:200px;
-    background-color: $blue-light;
+    background-color: $blue-light-alpha;
   }
 
   #logo {
     text-align:center;
     background-color: rgba(0,0,0,0.25);
     padding: 100px 20px 50px 20px;
+
     .fill {
       width:100%;
     }
@@ -113,14 +120,37 @@ a {
 }
 
 .bg-blue-darker {
+  position:absolute;
   margin-top:-220px;
   padding: 1px 0;
   background-color: $blue-darker;
   min-height:500px;
+  left: 0px;
+  right: 0px;
 }
 
 .bg-blue-dark {
   margin-top:125px;
   background-color: $blue-dark;
   min-height:500px;
+}
+
+.callout {
+  background-color: rgba(48,55,81, 0.5);
+  margin-top: -368px;
+  padding:30px;
+  color: #FFFFFF;
+  font-size: 42px;
+  line-height:38px;
+
+  .subcallout {
+    font-size: 17px;
+    line-height: 16px;
+    padding: 16px 0;
+  }
+}
+
+.pos-relative {
+  position:relative;
+  margin: 0;
 }
