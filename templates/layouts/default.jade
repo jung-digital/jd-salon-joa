@@ -31,10 +31,13 @@ html
 
       +flash-messages(messages)
 
-      .container
+      .container.main
         include header.jade
-        block content
-        include footer.jade
+      .bg-blue-darker.skew-neg-slight
+        .bg-blue-dark.skew-pos-slight
+          .skew-pos-full
+            block content
+          include footer.jade
 
     script(src='/js/jquery/jquery-1.11.2.min.js')
     script(src='/js/bootstrap/bootstrap-3.4.4.min.js')

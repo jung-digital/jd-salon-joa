@@ -1,4 +1,7 @@
 module.exports = {
+    options: {
+        verbose:true
+    },
 	js: {
 		files: [
 			'model/**/*.js',

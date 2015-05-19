@@ -15,9 +15,9 @@ exports.initLocals = function(req, res, next) {
 
 	locals.navLinks = config.pages
 		.filter(function (i) {return i.showInNav;})
-		.map(function (i) { return {label: i.label, key: i.key, href: i.href};})	
+		.map(function (i) { return {label: i.label, key: i.key, href: i.href};});
 
-		console.log(locals.navLinks)
+	console.log(locals.navLinks);
 
 	locals.user = req.user;
 	

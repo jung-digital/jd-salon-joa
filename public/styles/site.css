@@ -5858,13 +5858,21 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
 html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: #30384f;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 body {
   background: none;
@@ -5912,11 +5920,49 @@ a {
 .sidebar-nav {
   font-weight: bold; }
   .sidebar-nav .menu {
+    padding-top: 40px;
+    padding-bottom: 200px;
     background-color: rgba(180, 237, 252, 0.3); }
   .sidebar-nav #logo {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.25);
-    padding-top: 25px;
-    padding-bottom: 15px; }
+    padding: 100px 20px 50px 20px; }
+    .sidebar-nav #logo .fill {
+      width: 100%; }
   .sidebar-nav ul {
     padding-left: 30px; }
+  .sidebar-nav .navbar li a {
+    font-size: 20px;
+    padding: 10px; }
+
+.skew-neg-slight {
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg); }
+
+.skew-pos-slight {
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg); }
+
+.skew-pos-full {
+  -webkit-transform: skewY(3deg);
+  -moz-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  -o-transform: skewY(3deg);
+  transform: skewY(3deg); }
+
+.bg-blue-darker {
+  margin-top: -220px;
+  padding: 1px 0;
+  background-color: #2b3348;
+  min-height: 500px; }
+
+.bg-blue-dark {
+  margin-top: 125px;
+  background-color: #30384f;
+  min-height: 500px; }

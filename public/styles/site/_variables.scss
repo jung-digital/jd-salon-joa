@@ -3,3 +3,12 @@
 $font-size-base: 14px;
 $blue-light: rgba(180,237,252, 0.3);
 $blue-dark: #30384f;
+$blue-darker: #2b3348;
+
+@mixin skew($deg) {
+  -webkit-transform: skewY($deg);
+  -moz-transform: skewY($deg);
+  -ms-transform: skewY($deg);
+  -o-transform: skewY($deg);
+  transform: skewY($deg);
+}
