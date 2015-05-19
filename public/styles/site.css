@@ -5866,6 +5866,14 @@ button.close {
   font-family: exo;
   src: url(/fonts/Exo.otf); }
 
+@font-face {
+  font-family: exoBold;
+  src: url(/fonts/Exo-Bold.otf); }
+
+@font-face {
+  font-family: exoSemiBold;
+  src: url(/fonts/Exo-SemiBold.otf); }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -5945,6 +5953,7 @@ a {
   .sidebar-nav ul {
     padding-left: 30px; }
   .sidebar-nav .navbar li a {
+    font-family: exoSemiBold;
     font-size: 20px;
     padding: 10px; }
 
@@ -5971,7 +5980,7 @@ a {
 
 .bg-blue-darker {
   position: absolute;
-  margin-top: -220px;
+  margin-top: -240px;
   padding: 1px 0;
   background-color: #2b3348;
   min-height: 500px;
@@ -5984,23 +5993,27 @@ a {
   min-height: 500px; }
 
 .callout {
-  background-color: rgba(48, 55, 81, 0.5);
-  margin-top: -368px;
+  background-color: rgba(48, 55, 81, 0.9);
+  margin-top: -348px;
   color: #FFFFFF;
-  font-size: 42px;
-  line-height: 38px; }
+  font-size: 40px;
+  line-height: 36px; }
   .callout .subcallout1 {
-    padding: 30px; }
+    padding: 60px 30px 30px 30px; }
   .callout .subcallout2 {
     padding: 0px 30px;
     font-size: 17px;
     line-height: 16px; }
   .callout .schedule {
-    margin: 30px 0px 0px 0px;
-    padding: 0px 25px;
+    margin: 40px 0px 0px 0px;
+    padding: 10px 0px;
+    font-family: exoSemiBold;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     background-color: #bf5677; }
+  .callout .contact {
+    font-size: 10px;
+    text-align: center; }
 
 .pos-relative {
   position: relative;

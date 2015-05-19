@@ -7,31 +7,31 @@
             "showInNav": false
         },
         {
-        	"label": "Services",
+        	"label": "SERVICES",
         	"key":"services",
         	"href":"/services",
         	"showInNav": true
         },
         {
-        	"label": "Our Team",
+        	"label": "OUR TEAM",
         	"key":"ourTeam",
         	"href":"/ourTeam",
         	"showInNav": true
         },
         {
-        	"label": "The Salon",
+        	"label": "THE SALON",
         	"key":"theSalon",
         	"href":"/theSalon",
         	"showInNav": true
         },
         {
-        	"label": "Gallery",
+        	"label": "GALLERY",
         	"key":"gallery",
         	"href":"/gallery",
         	"showInNav": true
         },
         {
-        	"label": "Events",
+        	"label": "EVENTS",
         	"key":"events",
         	"href":"/events",
         	"showInNav": true
