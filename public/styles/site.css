@@ -5941,7 +5941,7 @@ a {
 .sidebar-nav {
   font-weight: bold; }
   .sidebar-nav .menu {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 200px;
     background-color: rgba(180, 237, 252, 0.7); }
   .sidebar-nav #logo {
@@ -5951,7 +5951,7 @@ a {
     .sidebar-nav #logo .fill {
       width: 100%; }
   .sidebar-nav ul {
-    padding-left: 30px; }
+    padding-left: 18px; }
   .sidebar-nav .navbar li a {
     font-family: exoSemiBold;
     font-size: 20px;
@@ -5994,7 +5994,7 @@ a {
 
 .callout {
   background-color: rgba(48, 55, 81, 0.9);
-  margin-top: -348px;
+  margin-top: -338px;
   color: #FFFFFF;
   font-size: 40px;
   line-height: 36px; }
