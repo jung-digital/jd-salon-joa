@@ -5986,14 +5986,21 @@ a {
 .callout {
   background-color: rgba(48, 55, 81, 0.5);
   margin-top: -368px;
-  padding: 30px;
   color: #FFFFFF;
   font-size: 42px;
   line-height: 38px; }
-  .callout .subcallout {
+  .callout .subcallout1 {
+    padding: 30px; }
+  .callout .subcallout2 {
+    padding: 0px 30px;
     font-size: 17px;
-    line-height: 16px;
-    padding: 16px 0; }
+    line-height: 16px; }
+  .callout .schedule {
+    margin: 30px 0px 0px 0px;
+    padding: 0px 25px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #bf5677; }
 
 .pos-relative {
   position: relative;
