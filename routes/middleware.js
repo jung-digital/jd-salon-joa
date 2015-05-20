@@ -20,6 +20,8 @@ exports.initLocals = function(req, res, next) {
 	console.log(locals.navLinks);
 
 	locals.user = req.user;
+
+	locals.services = config.services;
 	
 	next();
 };

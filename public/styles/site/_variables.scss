@@ -1,11 +1,14 @@
 // Override Bootstrap variables in this file, e.g.
 
 $font-size-base: 14px;
+$blue-light: #b3edfc;
 $blue-light-alpha: rgba(180,237,252, 0.7);
 $blue-dark: #30384f;
 $blue-darker: #2b3348;
 
 $pink: #bf5677;
+
+$content-width: 1100px;
 
 @mixin skew($deg) {
   -webkit-transform: skewY($deg);
@@ -13,4 +16,11 @@ $pink: #bf5677;
   -ms-transform: skewY($deg);
   -o-transform: skewY($deg);
   transform: skewY($deg);
+}
+
+@mixin anim($sec, $trans) {
+  -webkit-transition: all $sec $trans;
+  -moz-transition: all $sec $trans;
+  -o-transition: all $sec $trans;
+  transition: all $sec $trans;
 }

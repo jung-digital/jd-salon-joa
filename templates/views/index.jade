@@ -1,11 +1,14 @@
 extends ../layouts/default
 
+block js
+    script(src="/js/index.js")
+
 block css
     link(href="/styles/index.css", rel="stylesheet")
 
 block content
-  .container
-    .row 
+  .container-fluid.content
+    .row
       .col-lg-4.col-md-4.col-sm-4
       .col-lg-3.col-md-3.col-sm-4.nopadding
         .callout
@@ -14,3 +17,17 @@ block content
           .schedule SCHEDULE AN APPOINTMENT &gt;
           .contact 303.284.9536&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;7155 E Colfax Ave. Denver, Colorado
       .col-lg-5.col-md-5.col-sm-4
+    .row.home-row.home-row-1
+      .col-lg-12
+        .centered
+          h1.content-width.ta-left OUR SERVICES.
+          include index-our-services.jade
+    .row.home-row.home-row-2
+      .col-lg-12
+        h1.ta-right MEET THE TEAM.
+    .row.home-row.home-row-3
+      .col-lg-12
+        h1 ABOUT THE SALON.
+    .row.home-row.home-row-4
+      .col-lg-12
+        h1 UPCOMING EVENTS.

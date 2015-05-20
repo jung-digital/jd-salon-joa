@@ -23,15 +23,6 @@ body {
     margin:0;
 }
 
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
-
-a {
-  color: $blue-dark;
-}
-
 #header {
 	margin-top: 30px;
 
@@ -53,8 +44,6 @@ a {
       padding-bottom:200px;
       background-color: $blue-light-alpha;
     }
-
-    
 
     .navbar {
       ul {
@@ -90,7 +79,7 @@ a {
   }
 
   .social {
-    margin-top:450px;
+    margin-top:430px;
 
     i {
       font-size: 30px;
@@ -132,20 +121,6 @@ a {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-
-
-.skew-neg-slight {
-  @include skew(-5deg);
-}
-
-.skew-pos-slight {
-  @include skew(2deg);
-}
-
-.skew-pos-full {
-  @include skew(3deg);
 }
 
 .bg-blue-darker {
@@ -196,7 +171,6 @@ a {
   }
 }
 
-.pos-relative {
-  position:relative;
-  margin: 0;
+.content {
+  color: #FFF;
 }

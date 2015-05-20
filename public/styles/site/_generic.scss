@@ -1,0 +1,53 @@
+.ta-left {
+  text-align: left;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.pos-relative {
+  position:relative;
+  margin: 0;
+}
+
+.content-width {
+  width: $content-width;
+}
+
+.content-max-width {
+  max-width: $content-width;
+  width: 100%;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.centered {
+  text-align: center;
+  width:100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.centered > * {
+  margin: 0 auto;
+}
+
+a {
+  color: $blue-dark;
+}
+
+.skew-neg-slight {
+  @include skew(-5deg);
+}
+
+.skew-pos-slight {
+  @include skew(2deg);
+}
+
+.skew-pos-full {
+  @include skew(3deg);
+}
