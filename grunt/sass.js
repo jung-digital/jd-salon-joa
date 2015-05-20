@@ -1,7 +1,8 @@
 module.exports = {
-	dist: {
+  dist: {
     options: {
-      style: 'expanded'
+      style: 'expanded',
+      includePaths: ['node_modules/font-awesome/scss']
     },
     files: {
       'public/styles/site.css': 'public/styles/site.scss',

@@ -5,6 +5,8 @@ $blue-light-alpha: rgba(180,237,252, 0.7);
 $blue-dark: #30384f;
 $blue-darker: #2b3348;
 
+$pink: #bf5677;
+
 @mixin skew($deg) {
   -webkit-transform: skewY($deg);
   -moz-transform: skewY($deg);

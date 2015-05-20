@@ -8,12 +8,11 @@ var keystone = require('keystone');
 keystone.set('port', 5001);
 
 keystone.init({
-
 	'name': 'Salon Joa',
 	'brand': 'Salon Joa',
 	
 	'sass': 'public',
-	'static': 'public',
+	'static': ['public', 'node_modules/font-awesome'],
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
