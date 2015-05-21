@@ -33,8 +33,6 @@ body {
       text-align:center;
       background-color: rgba(0,0,0,0.25);
       padding: 100px 20px 50px 20px;
-
-      
     }
 
     .menu {
@@ -100,11 +98,24 @@ body {
   }
 }
 
-#footer {
-	margin-top: 30px;
-	border-top: 1px solid $gray-lighter;
-	padding-top: 30px;
-	color: $gray-light;
+.neg-margin-200 {
+  margin-bottom: -200px;
+}
+
+.footer-wrapper {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -100px;
+  height:100px;
+
+  .footer {
+  overflow: hidden;
+    position:absolute;
+    height: 400px;
+  	background-color: $pink;
+    border-bottom: 200px solid $pink;
+  }
 }
 
 .centre {
@@ -122,6 +133,8 @@ body {
 }
 
 .bg-blue-darker {
+  z-index: 1;
+  position: relative;
   position:absolute;
   margin-top:-240px;
   padding: 1px 0;
@@ -129,20 +142,26 @@ body {
   min-height:500px;
   left: 0px;
   right: 0px;
+  overflow: hidden;
 }
 
 .bg-blue-dark {
+  
   margin-top:125px;
   background-color: $blue-dark;
   min-height:500px;
+  transform-origin: left top;
 }
 
 .callout {
+  position: relative;
   background-color: rgba(48,55,81, 0.9);
-  margin-top: -338px;
+  margin-top: 382px;
   color: #FFFFFF;
   font-size: 40px;
   line-height:36px;
+
+  z-index: 100;
 
   .subcallout1 {
     padding:60px 30px 30px 30px;

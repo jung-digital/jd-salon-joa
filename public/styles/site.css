@@ -6002,11 +6002,21 @@ body {
     #header .social .col1 {
       margin-right: 1px; }
 
-#footer {
-  margin-top: 30px;
-  border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777; }
+.neg-margin-200 {
+  margin-bottom: -200px; }
+
+.footer-wrapper {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -100px;
+  height: 100px; }
+  .footer-wrapper .footer {
+    overflow: hidden;
+    position: absolute;
+    height: 400px;
+    background-color: #bf5677;
+    border-bottom: 200px solid #bf5677; }
 
 .centre {
   margin-left: 30%;
@@ -6021,25 +6031,31 @@ body {
   height: auto; }
 
 .bg-blue-darker {
+  z-index: 1;
+  position: relative;
   position: absolute;
   margin-top: -240px;
   padding: 1px 0;
   background-color: #2b3348;
   min-height: 500px;
   left: 0px;
-  right: 0px; }
+  right: 0px;
+  overflow: hidden; }
 
 .bg-blue-dark {
   margin-top: 125px;
   background-color: #30384f;
-  min-height: 500px; }
+  min-height: 500px;
+  transform-origin: left top; }
 
 .callout {
+  position: relative;
   background-color: rgba(48, 55, 81, 0.9);
-  margin-top: -338px;
+  margin-top: 382px;
   color: #FFFFFF;
   font-size: 40px;
-  line-height: 36px; }
+  line-height: 36px;
+  z-index: 100; }
   .callout .subcallout1 {
     padding: 60px 30px 30px 30px; }
   .callout .subcallout2 {

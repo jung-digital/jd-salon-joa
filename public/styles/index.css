@@ -136,7 +136,7 @@ html {
   background-repeat: no-repeat; }
   .home-row-3 .about {
     text-align: left; }
-  .home-row-3 .read-testimonials {
+  .home-row-3 .read-testimonials-btn {
     cursor: pointer;
     border: 1px solid #b3edfc;
     color: #b3edfc;
@@ -145,3 +145,37 @@ html {
     height: 50px;
     line-height: 50px;
     margin-top: 20px; }
+
+.home-row-4 {
+  position: relative;
+  z-order: 3;
+  margin-top: -10px;
+  background-color: #1f2535;
+  height: 350px; }
+  .home-row-4 .view-photo-gallery-wrapper {
+    margin: 50px;
+    position: relative;
+    float: left;
+    border-right: 1px solid #4c4b4a;
+    text-align: center; }
+    .home-row-4 .view-photo-gallery-wrapper .view-photo-gallery-btn {
+      position: absolute;
+      top: 75px;
+      left: 20px;
+      cursor: pointer;
+      border: 1px solid #b3edfc;
+      color: #b3edfc;
+      text-align: center;
+      width: 200px;
+      height: 50px;
+      line-height: 50px; }
+  .home-row-4 .upcoming-events-wrapper {
+    margin: 50px;
+    float: left;
+    text-align: left;
+    padding-top: 45px; }
+    .home-row-4 .upcoming-events-wrapper h1 {
+      color: #fff;
+      margin-bottom: 10px; }
+    .home-row-4 .upcoming-events-wrapper .no-events-msg {
+      color: #bf5677; }
