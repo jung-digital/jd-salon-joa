@@ -37,6 +37,36 @@
         	"showInNav": true
         }
     ],
+    "team": [
+        {
+            "id": "person1",
+            "name": "Howard Hughes",
+            "role": "Pilot",
+            "description": "Howard Hughes is amazing.",
+            "photo": "/images/team/person1.jpg"
+        },
+        {
+            "id": "person2",
+            "name": "Howard Hughes 2",
+            "role": "Pilot",
+            "description": "Howard Hughes 2 is amazing.",
+            "photo": "/images/team/person1.jpg"
+        },
+        {
+            "id": "person3",
+            "name": "Howard Hughes 3",
+            "role": "Pilot",
+            "description": "Howard Hughes 3 is amazing.",
+            "photo": "/images/team/person1.jpg"
+        },
+        {
+            "id": "person4",
+            "name": "Howard Hughes 4",
+            "role": "Pilot",
+            "description": "Howard Hughes 4 is amazing.",
+            "photo": "/images/team/person1.jpg"
+        }
+    ],
     "services": [
         {
             "id": "barber",

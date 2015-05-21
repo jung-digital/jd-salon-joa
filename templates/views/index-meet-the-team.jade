@@ -1,0 +1,11 @@
+.meet-the-team.content-max-width
+  .mtt-header
+    .mtt-box-sel.hidden
+    each person, ix in team
+      .mtt-box(id=person.id, ix=ix)
+        img.img-max-width-100(src=person.photo)
+  .content.pull-left(id="personContent")
+    .person-title
+      .person-name
+      .person-role
+    .person-description

@@ -1,9 +1,8 @@
 .our-services.content-max-width
-  .header
-    .box-sel.hidden
+  .os-header
+    .os-box-sel.hidden
     each service, ix in services
-      .box(id=service.id, ix=ix)
+      .os-box(id=service.id, ix=ix)
         .service!= service.label
           .sub!= service.sub
-          .hidden!= service.description
   .content.pull-left(id="serviceContent")
