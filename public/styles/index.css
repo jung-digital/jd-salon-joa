@@ -68,7 +68,9 @@ html {
   -ms-transform: skewY(-2deg);
   -o-transform: skewY(-2deg);
   transform: skewY(-2deg);
-  border-top: 1px solid #fff;
+  position: relative;
+  z-order: 1;
+  border-top: 1px solid #3b495e;
   background-color: #2e364c; }
   .home-row-2 > * {
     -webkit-transform: skewY(2deg);
@@ -124,5 +126,22 @@ html {
       text-align: left; }
 
 .home-row-3 {
-  margin-top: -100px;
-  background-color: #30384f; }
+  position: relative;
+  z-order: 2;
+  margin-top: -50px;
+  background-color: #282f42;
+  height: 350px;
+  background-image: url(/images/store-front.png);
+  background-position: right;
+  background-repeat: no-repeat; }
+  .home-row-3 .about {
+    text-align: left; }
+  .home-row-3 .read-testimonials {
+    cursor: pointer;
+    border: 1px solid #b3edfc;
+    color: #b3edfc;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px; }
