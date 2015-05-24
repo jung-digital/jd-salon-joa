@@ -6058,6 +6058,7 @@ body {
     .footer .footer-box .social {
       float: right; }
       .footer .footer-box .social .fa {
+        cursor: pointer;
         color: #fff;
         font-size: 16px;
         margin-right: 25px;
@@ -6109,6 +6110,7 @@ body {
     font-size: 17px;
     line-height: 16px; }
   .callout .schedule {
+    cursor: pointer;
     margin: 40px 0px 0px 0px;
     padding: 10px 0px;
     font-family: exoSemiBold;
