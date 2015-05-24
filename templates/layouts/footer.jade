@@ -1,8 +1,19 @@
 .footer
-  ul.nav.navbar-nav.navbar-right
-    if user
-      if user.canAccessKeystone
-        li: a(href='/keystone') Open Keystone
-      li: a(href='/keystone/signout') Sign Out
-    else
-      li: a(href='/keystone/signin') Sign In
+  .centered
+    .content-max-width.footer-box
+      a
+        .book-btn BOOK ONLINE
+      .address 7155 E. Colfax Ave. Denver, Colorado | 303.284.9535
+      .social
+        i.fa.fa-facebook
+        i.fa.fa-twitter
+        i.fa.fa-instagram
+        i.fa.fa-yelp
+      .sign-in
+        ul.nav.navbar-nav
+          if user
+            if user.canAccessKeystone
+              li: a(href='/keystone') Open Keystone
+            li: a(href='/keystone/signout') Sign Out
+          else
+            li: a(href='/keystone/signin') Sign In

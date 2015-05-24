@@ -13,7 +13,11 @@ function equalize(sourceSelector, targetSelector, prop) {
   function equalize_windowResizeHandler() {
     var src = $(sourceSelector);
     var target = $(targetSelector);
-    target.css(prop, src.css(prop));
+
+    $.makeArray(target).forEach(function (t) {
+      $(t).css(prop, src.css(prop));
+    })
+    
   }
 
   equalize_windowResizeHandler();
