@@ -1,6 +1,25 @@
 /* Index (home) JS file */
 
 /*---------------------------------------------------------------------*\
+ * Equalize
+ * Purpose: makes a property of one div equal to another
+ * Author: Joshua Jung
+ * Date: 5/24/2015
+ * Requires: jQuery
+\*---------------------------------------------------------------------*/
+function equalize(sourceSelector, targetSelector, prop) {
+  $(window).resize(equalize_windowResizeHandler);
+
+  function equalize_windowResizeHandler() {
+    var src = $(sourceSelector);
+    var target = $(targetSelector);
+    target.css(prop, src.css(prop));
+  }
+
+  equalize_windowResizeHandler();
+}
+
+/*---------------------------------------------------------------------*\
  * Auto nav box
  * Purpose: moves a selector div over one of many navigation items.
  * Author: Joshua Jung
@@ -48,3 +67,5 @@ autoNavBox('.mtt-box', '.mtt-box-sel', 'ix', function (ix) {
   $('.person-role').text(team[ix].role);
   $('.person-description').text(team[ix].description);
 });
+
+equalize('.logo-box', '.logo-box-link', 'height');

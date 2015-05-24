@@ -34,12 +34,11 @@ html
 
       .container-fluid
         include header.jade
+      .bg-blue-darker.skew-neg-slight.neg-margin-200
+        .bg-blue-dark.skew-pos-slight.neg-margin-200
       .pos-relative
-        .bg-blue-darker.skew-neg-slight.neg-margin-200
-          .bg-blue-dark.skew-pos-slight.neg-margin-200
-            .skew-pos-full.clearfix.neg-margin-200
-              block content
-              include footer.jade
+          block content
+          include footer.jade
 
     script(src='/js/jquery/jquery-1.11.2.min.js')
     script(src='/js/bootstrap/bootstrap-3.4.4.min.js')

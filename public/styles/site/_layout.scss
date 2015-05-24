@@ -26,14 +26,16 @@ body {
 #header {
 	margin-top: 30px;
 
+  .logo-box {
+    text-align:center;
+    background-color: rgba(0,0,0,0.25);
+    padding: 100px 20px 50px 20px;
+  }
+    
   .navigation {
     font-weight: bold;
 
-    #logo {
-      text-align:center;
-      background-color: rgba(0,0,0,0.25);
-      padding: 100px 20px 50px 20px;
-    }
+    
 
     .menu {
       padding-top:30px;
@@ -102,20 +104,10 @@ body {
   margin-bottom: -200px;
 }
 
-.footer-wrapper {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: -100px;
-  height:100px;
-
-  .footer {
-  overflow: hidden;
-    position:absolute;
-    height: 400px;
-  	background-color: $pink;
-    border-bottom: 200px solid $pink;
-  }
+.footer {
+  height: 400px;
+  margin: 0 auto;
+	background-color: $pink;
 }
 
 .centre {
@@ -135,28 +127,24 @@ body {
 .bg-blue-darker {
   z-index: 1;
   position: relative;
-  position:absolute;
-  margin-top:-240px;
+  margin-top: -250px;
   padding: 1px 0;
   background-color: $blue-darker;
-  min-height:500px;
+  height:200px;
   left: 0px;
   right: 0px;
-  overflow: hidden;
 }
 
 .bg-blue-dark {
-  
+  z-index: 2;
   margin-top:125px;
   background-color: $blue-dark;
-  min-height:500px;
-  transform-origin: left top;
+  min-height:200px;
 }
 
 .callout {
   position: relative;
   background-color: rgba(48,55,81, 0.9);
-  margin-top: 382px;
   color: #FFFFFF;
   font-size: 40px;
   line-height:36px;
@@ -189,5 +177,9 @@ body {
 }
 
 .content {
+  margin-top: 250px;
+  position: relative;
+  z-index: 3;
   color: #FFF;
+  background-color: $blue-dark;
 }
