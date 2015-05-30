@@ -9,11 +9,11 @@ html {
   cursor: pointer;
   position: relative;
   float: left;
-  min-width: 90px;
+  min-width: 80px;
   height: 100px;
   text-align: center;
   vertical-align: top;
-  padding: 5px;
+  padding: 10px;
   display: inline-block; }
 
 .box-sel, .home-row-1 .our-services .os-header .os-box-sel, .home-row-2 .meet-the-team .mtt-header .mtt-box-sel {
