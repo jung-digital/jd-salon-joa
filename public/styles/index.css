@@ -3,7 +3,7 @@ html {
 
 .home-row h1 {
   color: #b3edfc;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
 .box, .home-row-1 .our-services .os-header .os-box, .home-row-2 .meet-the-team .mtt-header .mtt-box {
   cursor: pointer;
@@ -63,21 +63,22 @@ html {
     text-align: left; }
 
 .home-row-2 {
-  -webkit-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  transform: skewY(-2deg);
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
   position: relative;
   z-order: 1;
   border-top: 1px solid #3b495e;
-  background-color: #2e364c; }
+  background-color: #2e364c;
+  padding-top: 40px; }
   .home-row-2 > * {
-    -webkit-transform: skewY(2deg);
-    -moz-transform: skewY(2deg);
-    -ms-transform: skewY(2deg);
-    -o-transform: skewY(2deg);
-    transform: skewY(2deg); }
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg); }
   .home-row-2 .meet-the-team {
     display: inline-block;
     margin-bottom: 100px; }
@@ -85,9 +86,10 @@ html {
       position: relative;
       text-align: justify; }
       .home-row-2 .meet-the-team .mtt-header .mtt-box {
+        float: right;
         width: 136px;
         height: 136px;
-        margin: 0px 1px 0px 0px; }
+        padding: 0px; }
         .home-row-2 .meet-the-team .mtt-header .mtt-box .person {
           position: absolute;
           bottom: 0px;
@@ -104,7 +106,11 @@ html {
         transition: all 0.3s ease-in-out;
         background-color: rgba(255, 255, 255, 0.1); }
       .home-row-2 .meet-the-team .mtt-header .mtt-box-sel {
-        height: 136px; }
+        height: 136px;
+        padding: 0px;
+        background: linear-gradient(rgba(180, 237, 252, 0.9), rgba(180, 237, 252, 0.9));
+        border: none;
+        mix-blend-mode: overlay; }
     .home-row-2 .meet-the-team .person-title {
       color: #b3edfc; }
       .home-row-2 .meet-the-team .person-title .person-name {

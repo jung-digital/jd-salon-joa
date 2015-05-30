@@ -7,7 +7,7 @@ html {
 .home-row {
   h1 {
     color: $blue-light;
-    margin-bottom:40px;
+    margin-bottom:20px;
   }
 }
 
@@ -93,16 +93,17 @@ html {
 }
 
 .home-row-2 {
-  @include skew(-2deg);
+  @include skew(-5deg);
 
   position: relative;
   z-order: 1;
 
   border-top: 1px solid #3b495e;
   background-color: #2e364c;
+  padding-top:40px;
 
   > * {
-    @include skew(2deg);
+    @include skew(5deg);
   }
 
   .meet-the-team {
@@ -116,9 +117,11 @@ html {
       .mtt-box {
         @extend .box;
 
+        float: right;
+
         width: 136px;
-        height:136px;
-        margin: 0px 1px 0px 0px;
+        height: 136px;
+        padding: 0px;
 
         .person {
           position: absolute;
@@ -143,6 +146,16 @@ html {
         @extend .box-sel;
 
         height:136px;
+        padding:0px;
+
+        background: linear-gradient(
+          rgba(180, 237, 252, 0.90), 
+          rgba(180, 237, 252, 0.90)
+        );
+
+        border: none;
+
+        mix-blend-mode: overlay;
       }
     }
 
