@@ -1,5 +1,8 @@
 @import "variables";
 
+/*========================================================*\
+ * HTML / Body
+\*========================================================*/
 html,body
 {
 	width: 100%;
@@ -26,22 +29,15 @@ body {
 	border-top: 5px solid $pink;
 }
 
-h1 {
-  font-family: exoThin;
-  color: $blue-light;
-  margin-bottom:20px;
-}
-
-h2 {
-  font-family: exoSemiBold;
-  color: $blue-light;
-  margin-bottom:20px;
-  font-size:22px;
-}
-
+/*========================================================*\
+ * Header
+\*========================================================*/
 .page-header {
 	margin:0px;
 
+  //-------------------------------
+  // Logo
+  //-------------------------------
 	.logo-box {
 		text-align:center;
 		background-color: rgba(0,0,0,0.25);
@@ -52,6 +48,9 @@ h2 {
     height: 152px;
   }
 
+  //-------------------------------
+  // Navigation Column
+  //-------------------------------
 	.col-nav {
     @extend .no-padding;
 
@@ -102,6 +101,9 @@ h2 {
 		}
 	}
 
+  //-------------------------------
+  // Callout Column ( Home only )
+  //-------------------------------
   .col-callout {
     @extend .no-padding;
     width: 410px;
@@ -134,6 +136,9 @@ h2 {
     }
   }
 
+  //-------------------------------
+  // Social Column (defaults)
+  //-------------------------------
   .col-social {
     @extend .no-padding;
     width: 160px;
@@ -144,9 +149,10 @@ h2 {
         font-size: 30px;
       }
 
-      div {
+      .share-box {
         @include anim(0.3s, ease-in-out);
 
+        cursor: pointer;
         float: left;
         background-color: $pink;
         width: 75px;
@@ -155,35 +161,25 @@ h2 {
         padding-top:15px;
       }
 
-      .col1 {
-        cursor: pointer;
+      .share-box:hover {
+        i {
+          color: #fff;
+        }
+      }
+
+      .sb1 {
         margin-right:1px;
         margin-top:60px;
       }
 
-      .col2 {
+      .sb2 {
         cursor: pointer;
         margin-top:60px;
-      }
-
-      .col1:hover {
-        i {
-          color: #fff;
-        }
-      }
-
-      .col2:hover {
-        i {
-          color: #fff;
-        }
       }
     }
   }
 }
 
-.neg-margin-200 {
-	margin-bottom: -200px;
-}
 
 .footer {
 	height: 293px;
@@ -288,7 +284,6 @@ h2 {
 }
 
 .content {
-	margin-top: 250px;
 	position: relative;
 	z-index: 3;
 	color: #FFF;

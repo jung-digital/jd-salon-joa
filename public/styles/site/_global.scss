@@ -1,0 +1,116 @@
+/*========================================================*\
+ * Links / Buttons
+\*========================================================*/
+a {
+  color: $blue-dark;
+}
+
+a:hover {
+  color: white;
+}
+
+/*========================================================*\
+ * Divs
+\*========================================================*/
+.clear {
+    clear: both;
+}
+
+.spacer-vertical {
+  height: 50px;
+  width: 50px;
+}
+
+.pos-relative {
+  position:relative;
+  margin: 0;
+}
+
+.content-width {
+  width: $content-width;
+}
+
+.header-width {
+  width: $header-width;
+}
+
+.content-max-width {
+  max-width: $content-width;
+  width: 100%;
+}
+
+.no-padding {
+   padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.margin-neg-200px {
+  margin-top:-200px;
+}f
+
+.centered {
+  text-align: center;
+  width:100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.centered > * {
+  margin: 0 auto;
+}
+
+/*========================================================*\
+ * Text
+\*========================================================*/
+.ta-left {
+  text-align: left;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+/*========================================================*\
+ * Headings
+\*========================================================*/
+h1 {
+  font-family: exoThin;
+  color: $blue-light;
+  margin-bottom:20px;
+}
+
+h2 {
+  font-family: exoSemiBold;
+  color: $blue-light;
+  margin-bottom:20px;
+  font-size:22px;
+}
+
+/*========================================================*\
+ * Images
+\*========================================================*/
+.img-width-100 {
+  width:100%;
+}
+
+.img-max-width-100 {
+  max-width:100%;
+}
+
+/*========================================================*\
+ * Effects
+\*========================================================*/
+.skew-neg-slight {
+  @include skew(-5deg);
+}
+
+.skew-pos-slight {
+  @include skew(2deg);
+}
+
+.skew-pos-full {
+  @include skew(3deg);
+}

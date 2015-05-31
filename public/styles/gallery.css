@@ -1,15 +1,35 @@
+/*========================================================* * Layout Overrides
+\*========================================================*/
 html {
   background-image: url(/images/bg-gallery.jpg); }
 
-.row-galleries {
-  margin-top: -100px;
-  min-height: 300px; }
+.page-header .col-social .social .share-box {
+  background-color: #b3edfc; }
 
-.page-header .social {
-  margin-top: 120px; }
-  .page-header .social div {
-    background-color: #b3edfc; }
+.page-header .col-social .social .sb1 {
+  margin-top: 0px; }
+
+.page-header .col-social .social .sb2 {
+  margin-top: 0px; }
 
 .page-header .logo-box {
   padding: 30px;
   height: 240px; }
+
+/*========================================================* * Galleries
+\*========================================================*/
+.row-galleries {
+  margin-top: -100px;
+  min-height: 300px; }
+
+.gallery-image {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid white;
+  width: 216px;
+  height: 128px; }
+
+.gallery-image:hover {
+  border: 2px solid #bf5677; }
