@@ -19,7 +19,6 @@ exports.initLocals = function(req, res, next) {
 
 	locals.user = req.user;
 
-	console.log(req);
   _.extend(locals, config);
 	
 	next();

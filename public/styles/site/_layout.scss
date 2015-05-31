@@ -1,3 +1,5 @@
+@import "variables";
+
 html,body
 {
 	width: 100%;
@@ -22,6 +24,19 @@ body {
 	background: none;
 	margin:0;
 	border-top: 5px solid $pink;
+}
+
+h1 {
+  font-family: exoThin;
+  color: $blue-light;
+  margin-bottom:20px;
+}
+
+h2 {
+  font-family: exoSemiBold;
+  color: $blue-light;
+  margin-bottom:20px;
+  font-size:22px;
 }
 
 .page-header {
