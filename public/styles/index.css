@@ -1,10 +1,6 @@
 html {
   background-image: url(/images/bg-home.jpg); }
 
-.home-row h1 {
-  color: #b3edfc;
-  margin-bottom: 20px; }
-
 .box, .home-row-1 .our-services .os-header .os-box, .home-row-2 .meet-the-team .mtt-header .mtt-box {
   cursor: pointer;
   position: relative;

@@ -7,6 +7,7 @@ exports = module.exports = function(req, res) {
 	locals.section = 'gallery';
 
 	locals.header = {
+    showScheduleAnAppointment: true,
 		showCallout: false,
 		showSocial: true
 	};

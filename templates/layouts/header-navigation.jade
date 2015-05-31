@@ -1,7 +1,10 @@
 .navigation
-  .schedule-box
-    a
-      .schedule-an-appointment-white SCHEDULE AN APPOINTMENT &gt;
+  if header.showScheduleAnAppointment
+    .schedule-box
+        a
+          .schedule-an-appointment-white SCHEDULE AN APPOINTMENT &gt;
+  else
+    .home-spacer-box &nbsp
   .logo-box
     a(href='/')
       img.img-width-100(src='/images/logo.png')

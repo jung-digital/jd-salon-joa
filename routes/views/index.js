@@ -7,6 +7,7 @@ exports = module.exports = function(req, res) {
 	locals.section = 'home';
 
 	locals.header = {
+    showScheduleAnAppointment: false,
 		showCallout: true,
 		showSocial: true
 	};

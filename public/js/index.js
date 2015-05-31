@@ -7,15 +7,17 @@
  * Date: 5/24/2015
  * Requires: jQuery
 \*---------------------------------------------------------------------*/
-function equalize(sourceSelector, targetSelector, prop) {
+function equalize(sourceSelector, targetSelector, prop, offset) {
   $(window).resize(equalize_windowResizeHandler);
+
+  offset = offset || 0;
 
   function equalize_windowResizeHandler() {
     var src = $(sourceSelector);
     var target = $(targetSelector);
 
     $.makeArray(target).forEach(function (t) {
-      $(t).css(prop, src.css(prop));
+      $(t).css(prop, (parseFloat(src.css(prop)) + offset) + 'px');
     })
     
   }
@@ -72,4 +74,4 @@ autoNavBox('.mtt-box', '.mtt-box-sel', 'ix', function (ix) {
   $('.person-description').text(team[ix].description);
 });
 
-equalize('.logo-box', '.logo-box-link', 'height');
+equalize('.logo-box', '.logo-box-link', 'height', 152);

@@ -48,7 +48,13 @@ h2 {
 		padding: 75px 25px 50px 25px;
 	}
 
+  .home-spacer-box {
+    height: 152px;
+  }
+
 	.col-nav {
+    @extend .no-padding;
+
 		width: 315px;
 
 		.navigation {
@@ -96,46 +102,83 @@ h2 {
 		}
 	}
 
-	.social {
-		i {
-			@include anim(0.3s, ease-in-out);
-			font-size: 30px;
-		}
+  .col-callout {
+    @extend .no-padding;
+    width: 410px;
 
-		div {
-			@include anim(0.3s, ease-in-out);
+    .callout {
+      position: relative;
+      background-color: rgba(48,55,81, 0.92);
+      color: #FFFFFF;
+      font-size: 46px;
+      line-height:42px;
+      mix-blend-mode: dark-light;
 
-			float: left;
-			background-color: $pink;
-			width: 75px;
-			height: 200px;
-			text-align:center;
-			padding-top:15px;
-		}
+      z-index: 100;
 
-		.col1 {
-			cursor: pointer;
-			margin-right:1px;
-			margin-top:60px;
-		}
+      .subcallout1 {
+        padding:60px 30px 30px 30px;
+      }
 
-		.col2 {
-			cursor: pointer;
-			margin-top:60px;
-		}
+      .subcallout2 {
+        padding: 0px 30px;
+        font-size: 24px;
+        line-height: 22px;
+        margin-bottom:20px;
+      }
 
-		.col1:hover {
-			i {
-				color: #fff;
-			}
-		}
+      .contact {
+        font-size: 10px;
+        text-align: center;
+      }
+    }
+  }
 
-		.col2:hover {
-			i {
-				color: #fff;
-			}
-		}
-	}
+  .col-social {
+    @extend .no-padding;
+    width: 160px;
+
+    .social {
+      i {
+        @include anim(0.3s, ease-in-out);
+        font-size: 30px;
+      }
+
+      div {
+        @include anim(0.3s, ease-in-out);
+
+        float: left;
+        background-color: $pink;
+        width: 75px;
+        height: 200px;
+        text-align:center;
+        padding-top:15px;
+      }
+
+      .col1 {
+        cursor: pointer;
+        margin-right:1px;
+        margin-top:60px;
+      }
+
+      .col2 {
+        cursor: pointer;
+        margin-top:60px;
+      }
+
+      .col1:hover {
+        i {
+          color: #fff;
+        }
+      }
+
+      .col2:hover {
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 
 .neg-margin-200 {
@@ -224,39 +267,17 @@ h2 {
 	min-height:200px;
 }
 
-.callout {
-	position: relative;
-	background-color: rgba(48,55,81, 0.9);
-	color: #FFFFFF;
-	font-size: 40px;
-	line-height:36px;
-
-	z-index: 100;
-
-	.subcallout1 {
-		padding:60px 30px 30px 30px;
-	}
-
-	.subcallout2 {
-		padding: 0px 30px;
-		font-size: 17px;
-		line-height: 16px;
-	}
-
-	.contact {
-		font-size: 10px;
-		text-align: center;
-	}
-}
-
 .schedule-an-appointment {
 	cursor: pointer;
 	margin: 0px;
 	padding: 0px 0px;
 	font-family: exoSemiBold;
 	text-align: center;
-	font-size: 16px;
+	font-size: 20px;
 	background-color: $pink;
+  height:100px;
+  line-height:100px;
+  color: white;
 }
 
 .schedule-an-appointment-white {
