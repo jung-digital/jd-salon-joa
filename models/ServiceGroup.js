@@ -7,7 +7,8 @@ var keystone = require('keystone'),
  */
 
 var ServiceGroup = new keystone.List('ServiceGroup', {
-  autokey: { from: 'name', path: 'key', unique: true }
+  autokey: { from: 'name', path: 'key', unique: true },
+  sortable: true
 });
 
 ServiceGroup.add({

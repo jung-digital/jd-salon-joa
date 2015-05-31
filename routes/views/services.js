@@ -12,7 +12,20 @@ exports = module.exports = function(req, res) {
     showSocial: true
   };
 
-  view.query('serviceGroups', keystone.list('ServiceGroup').model.find().sort('sortOrder'));
+  keystone.list('ServiceGroup').model.find().sort('sortOrder').exec(function (err, serviceGroups) {
+    locals.serviceGroups = serviceGroups;
 
-  view.render('services');
+    keystone.list('Service').model.find().exec(function (err, services ) {
+      var byID = {};
+
+      services.forEach(function (s) {
+        byID[s._id] = s;
+        delete byID[s._id]._id;
+      });
+
+      locals.services = byID;
+
+      view.render('services');
+    });
+  });
 };

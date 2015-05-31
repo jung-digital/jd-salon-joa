@@ -5,7 +5,8 @@ var keystone = require('keystone'),
  * Services
 \*======================================================*/
 var Service = new keystone.List('Service', {
-  autokey: { from: 'name', path: 'key', unique: true }
+  autokey: { from: 'name', path: 'key', unique: true },
+  sortable: true
 });
 
 Service.add({

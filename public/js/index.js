@@ -1,6 +1,3 @@
-/*----------------------------------------------------------------------*\
- * Applications of autoNavBox
-\*----------------------------------------------------------------------*/
 jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
   $('#serviceContent').text(serviceGroups[ix].description);
 });

@@ -1,5 +1,7 @@
 @import "site/variables";
 @import "site/nonhomemods";
+@import "shared/navigation";
+@import "shared/our-services";
 
 /*========================================================*\
  * Layout Overrides
@@ -14,19 +16,28 @@ html {
 .row-services {
   .service {
     .head {
+      font-family: exo;
       .name {
+        float:left;
         color: white;
         font-size: 28px;
       }
       .cost {
+        margin-left: 10px;
+        float:left;
         color: $pink;
         font-size: 28px;
       }
     }
 
     .description {
+      clear:both;
       color: white;
       font-size: 14px;
     }
+  }
+
+  .service-content {
+    margin-bottom:50px;
   }
 }

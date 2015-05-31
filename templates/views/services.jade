@@ -1,7 +1,10 @@
 extends ../layouts/default
 
 block js
-    script(src="/js/index.js")
+    script(src="/js/services.js")
+    script.
+      var serviceGroups = !{JSON.stringify(serviceGroups)};
+      var services = !{JSON.stringify(services)};
 
 block css
     link(href="/styles/services.css", rel="stylesheet")
@@ -11,14 +14,20 @@ block content
   .container-fluid.content
     .row.row-services
       .col-lg-12.margin-neg-200px
-        .centered
-          .content-width
-            h1.ta-left SERVICES.
-            .spacer-vertical &nbsp;
-            
-            each service in services
+        .centered.clear
+          .content-width.ta-left
+            h1.ta-left PRICING.
+
+            .os-header
+              .os-box-sel.hidden
+              each serviceGroup, ix in serviceGroups
+                .os-box(id=serviceGroup.id, ix=ix)
+                  .service!= serviceGroup.name
+                    .sub Room
+            .service-template.hidden
               .service
                 .head
-                  .name=service.name
-                  .cost=service.cost
+                  .name
+                  .cost
                 .description
+            .service-content
