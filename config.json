@@ -67,49 +67,5 @@
             "description": "Howard Hughes 4 is amazing.",
             "photo": "/images/team/person1.jpg"
         }
-    ],
-    "services": [
-        {
-            "id": "barber",
-            "label": "THE<br>BARBER",
-            "sub": "ROOM",
-            "description": "The Barber...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum dolor sagittis, interdum dolor sed, euismod metus. Duis nec massa sit amet dui aliquam placerat consectetur sit amet orci. Nulla ut nulla nisi. Praesent id ex vulputate, porttitor felis ac, placerat nisi. Suspendisse feugiat tortor eget turpis cursus finibus. Ut viverra orci ac feugiat dictum. Nam nec enim ac elit scelerisque rhoncus. Quisque convallis quam id iaculis placerat. Pellentesque id neque tincidunt, tristique nisl ut, blandit ligula. Praesent scelerisque erat quis justo accumsan, sed malesuada orci efficitur. Aliquam eu quam sit amet eros pellentesque laoreet eu at quam. Praesent imperdiet non mauris eu interdum. Maecenas eu ornare mauris, non vulputate ligula. Sed convallis porta sapien at dapibus. Duis vel lacus tempus, efficitur enim eu, vehicula dolor."
-        },
-        {
-            "id": "stylist",
-            "label": "THE<br>STYLIST",
-            "sub": "ROOM",
-            "description": "The Stylist...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum dolor sagittis, interdum dolor sed, euismod metus. Duis nec massa sit amet dui aliquam placerat consectetur sit amet orci. Nulla ut nulla nisi. Praesent id ex vulputate, porttitor felis ac, placerat nisi. Suspendisse feugiat tortor eget turpis cursus finibus. Ut viverra orci ac feugiat dictum. Nam nec enim ac elit scelerisque rhoncus. Quisque convallis quam id iaculis placerat. Pellentesque id neque tincidunt, tristique nisl ut, blandit ligula. Praesent scelerisque erat quis justo accumsan, sed malesuada orci efficitur. Aliquam eu quam sit amet eros pellentesque laoreet eu at quam. Praesent imperdiet non mauris eu interdum. Maecenas eu ornare mauris, non vulputate ligula. Sed convallis porta sapien at dapibus. Duis vel lacus tempus, efficitur enim eu, vehicula dolor."
-        },
-        {
-            "id": "color",
-            "label": "THE<br>COLOR",
-            "sub": "ROOM",
-            "description": "The Color...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum dolor sagittis, interdum dolor sed, euismod metus. Duis nec massa sit amet dui aliquam placerat consectetur sit amet orci. Nulla ut nulla nisi. Praesent id ex vulputate, porttitor felis ac, placerat nisi. Suspendisse feugiat tortor eget turpis cursus finibus. Ut viverra orci ac feugiat dictum. Nam nec enim ac elit scelerisque rhoncus. Quisque convallis quam id iaculis placerat. Pellentesque id neque tincidunt, tristique nisl ut, blandit ligula. Praesent scelerisque erat quis justo accumsan, sed malesuada orci efficitur. Aliquam eu quam sit amet eros pellentesque laoreet eu at quam. Praesent imperdiet non mauris eu interdum. Maecenas eu ornare mauris, non vulputate ligula. Sed convallis porta sapien at dapibus. Duis vel lacus tempus, efficitur enim eu, vehicula dolor."
-        },
-        {
-            "id": "nail",
-            "label": "THE<br>NAIL",
-            "sub": "ROOM",
-            "description": "The Nail...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum dolor sagittis, interdum dolor sed, euismod metus. Duis nec massa sit amet dui aliquam placerat consectetur sit amet orci. Nulla ut nulla nisi. Praesent id ex vulputate, porttitor felis ac, placerat nisi. Suspendisse feugiat tortor eget turpis cursus finibus. Ut viverra orci ac feugiat dictum. Nam nec enim ac elit scelerisque rhoncus. Quisque convallis quam id iaculis placerat. Pellentesque id neque tincidunt, tristique nisl ut, blandit ligula. Praesent scelerisque erat quis justo accumsan, sed malesuada orci efficitur. Aliquam eu quam sit amet eros pellentesque laoreet eu at quam. Praesent imperdiet non mauris eu interdum. Maecenas eu ornare mauris, non vulputate ligula. Sed convallis porta sapien at dapibus. Duis vel lacus tempus, efficitur enim eu, vehicula dolor."
-        },
-        {
-            "id": "jovu",
-            "label": "THE<br>JO VU",
-            "sub": "ROOM",
-            "description": "The Jo Vu...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum dolor sagittis, interdum dolor sed, euismod metus. Duis nec massa sit amet dui aliquam placerat consectetur sit amet orci. Nulla ut nulla nisi. Praesent id ex vulputate, porttitor felis ac, placerat nisi. Suspendisse feugiat tortor eget turpis cursus finibus. Ut viverra orci ac feugiat dictum. Nam nec enim ac elit scelerisque rhoncus. Quisque convallis quam id iaculis placerat. Pellentesque id neque tincidunt, tristique nisl ut, blandit ligula. Praesent scelerisque erat quis justo accumsan, sed malesuada orci efficitur. Aliquam eu quam sit amet eros pellentesque laoreet eu at quam. Praesent imperdiet non mauris eu interdum. Maecenas eu ornare mauris, non vulputate ligula. Sed convallis porta sapien at dapibus. Duis vel lacus tempus, efficitur enim eu, vehicula dolor."
-        },
-        {
-            "id": "makeup",
-            "label": "THE<br>MAKE<br>UP",
-            "sub": "ROOM",
-            "description": "The Make Up...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum dolor sagittis, interdum dolor sed, euismod metus. Duis nec massa sit amet dui aliquam placerat consectetur sit amet orci. Nulla ut nulla nisi. Praesent id ex vulputate, porttitor felis ac, placerat nisi. Suspendisse feugiat tortor eget turpis cursus finibus. Ut viverra orci ac feugiat dictum. Nam nec enim ac elit scelerisque rhoncus. Quisque convallis quam id iaculis placerat. Pellentesque id neque tincidunt, tristique nisl ut, blandit ligula. Praesent scelerisque erat quis justo accumsan, sed malesuada orci efficitur. Aliquam eu quam sit amet eros pellentesque laoreet eu at quam. Praesent imperdiet non mauris eu interdum. Maecenas eu ornare mauris, non vulputate ligula. Sed convallis porta sapien at dapibus. Duis vel lacus tempus, efficitur enim eu, vehicula dolor."
-        },
-        {
-            "id": "facialwax",
-            "label": "THE<br>FACIAL<br>WAX",
-            "sub": "ROOM",
-            "description": "The Facial Wax...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum dolor sagittis, interdum dolor sed, euismod metus. Duis nec massa sit amet dui aliquam placerat consectetur sit amet orci. Nulla ut nulla nisi. Praesent id ex vulputate, porttitor felis ac, placerat nisi. Suspendisse feugiat tortor eget turpis cursus finibus. Ut viverra orci ac feugiat dictum. Nam nec enim ac elit scelerisque rhoncus. Quisque convallis quam id iaculis placerat. Pellentesque id neque tincidunt, tristique nisl ut, blandit ligula. Praesent scelerisque erat quis justo accumsan, sed malesuada orci efficitur. Aliquam eu quam sit amet eros pellentesque laoreet eu at quam. Praesent imperdiet non mauris eu interdum. Maecenas eu ornare mauris, non vulputate ligula. Sed convallis porta sapien at dapibus. Duis vel lacus tempus, efficitur enim eu, vehicula dolor."
-        }
     ]
 }

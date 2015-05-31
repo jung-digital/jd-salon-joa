@@ -1,8 +1,8 @@
 .our-services.content-max-width
   .os-header
     .os-box-sel.hidden
-    each service, ix in services
+    each service, ix in serviceGroups
       .os-box(id=service.id, ix=ix)
-        .service!= service.label
-          .sub!= service.sub
+        .service!= service.name
+          .sub Room
   .pull-left(id="serviceContent")

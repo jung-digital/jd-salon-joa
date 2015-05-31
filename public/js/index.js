@@ -65,7 +65,7 @@ function autoNavBox(navNodesSelector, selNodeSelector, indexAttr, clickCallback)
  * Applications of autoNavBox
 \*----------------------------------------------------------------------*/
 autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
-  $('#serviceContent').text(services[ix].description);
+  $('#serviceContent').text(serviceGroups[ix].description);
 });
 
 autoNavBox('.mtt-box', '.mtt-box-sel', 'ix', function (ix) {

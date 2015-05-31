@@ -5,25 +5,28 @@
  * Layout Overrides
 \*========================================================*/
 html {
-  background-image: url(/images/bg-gallery.jpg);
+  background-image: url(/images/bg-services.jpg);
 }
 
 /*========================================================*\
- * Galleries
+ * Services
 \*========================================================*/
-.row-galleries {
-  margin-top: -100px;  
-  min-height:300px;
-}
+.row-services {
+  .service {
+    .head {
+      .name {
+        color: white;
+        font-size: 28px;
+      }
+      .cost {
+        color: $pink;
+        font-size: 28px;
+      }
+    }
 
-.gallery-image {
-  @include anim(0.3s, ease-in-out);
-
-  border: 2px solid white;
-  width:216px;
-  height:128px;
-}
-
-.gallery-image:hover {
-  border: 2px solid $pink;
+    .description {
+      color: white;
+      font-size: 14px;
+    }
+  }
 }

@@ -12,5 +12,7 @@ exports = module.exports = function(req, res) {
 		showSocial: true
 	};
 
+  view.query('serviceGroups', keystone.list('ServiceGroup').model.find().sort('sortOrder'));
+
 	view.render('index');
 };

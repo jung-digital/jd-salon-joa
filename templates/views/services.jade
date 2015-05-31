@@ -1,0 +1,24 @@
+extends ../layouts/default
+
+block js
+    script(src="/js/index.js")
+
+block css
+    link(href="/styles/services.css", rel="stylesheet")
+  
+block content
+  .clear
+  .container-fluid.content
+    .row.row-services
+      .col-lg-12.margin-neg-200px
+        .centered
+          .content-width
+            h1.ta-left SERVICES.
+            .spacer-vertical &nbsp;
+            
+            each service in services
+              .service
+                .head
+                  .name=service.name
+                  .cost=service.cost
+                .description

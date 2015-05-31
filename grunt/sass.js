@@ -7,7 +7,8 @@ module.exports = {
     files: {
       'public/styles/site.css': 'public/styles/site.scss',
       'public/styles/index.css': 'public/styles/index.scss',
-      'public/styles/gallery.css': 'public/styles/gallery.scss'
+      'public/styles/gallery.css': 'public/styles/gallery.scss',
+      'public/styles/services.css': 'public/styles/services.scss'
     }
   }
 };
