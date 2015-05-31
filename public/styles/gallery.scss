@@ -1,0 +1,20 @@
+@import "site/variables";
+
+html {
+  background-image: url(/images/bg-gallery.jpg);
+}
+
+.page-header {
+  .social {
+    margin-top: 120px;
+
+    div {
+      background-color: $blue-light;
+    }
+  }
+
+  .logo-box {
+    padding: 30px;
+    height: 240px;
+  }
+}

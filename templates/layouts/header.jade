@@ -1,9 +1,11 @@
-#header.row
+.page-header.row
   .col-lg-1.col-md-1.col-sm-1.col-xs-1  
   .col-lg-3.col-md-3.col-sm-3.col-xs-10.nopadding.col-nav
     include header-navigation.jade
   .col-lg-3.col-md-3.col-sm-4.col-xs-1.nopadding
-    include header-callout.jade
+    if header.showCallout
+      include header-callout.jade
   .col-lg-3.col-md-3.hidden-sm.hidden-xs.nopadding
-    include header-social.jade
+    if header.showSocial
+      include header-social.jade
   .col-lg-2.col-md-2.hidden-sm.hidden-xs

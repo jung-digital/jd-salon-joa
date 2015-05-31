@@ -18,5 +18,4 @@ exports = module.exports = function(app) {
 	app.get('/', routes.views.index);
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
-	
 };

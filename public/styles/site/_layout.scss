@@ -1,255 +1,260 @@
 html,body
 {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    font-family: exoThin;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden; 
+	font-family: exoThin;
 }
 
 html {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: $blue-dark;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: $blue-dark;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 body {
-    background: none;
-    margin:0;
+	background: none;
+	margin:0;
+	border-top: 5px solid $pink;
 }
 
-#header {
-	padding-top: 153px;
-  border-top: 5px solid $pink;
+.page-header {
+	margin:0px;
 
-  .logo-box {
-    text-align:center;
-    background-color: rgba(0,0,0,0.25);
-    padding: 75px 25px 50px 25px;
-  }
+	.logo-box {
+		text-align:center;
+		background-color: rgba(0,0,0,0.25);
+		padding: 75px 25px 50px 25px;
+	}
 
-  .col-nav {
-    width: 315px;
+	.col-nav {
+		width: 315px;
 
-    .navigation {
-      font-weight: bold;
+		.navigation {
+			font-weight: bold;
 
+			.menu {
+				padding-top:30px;
+				padding-bottom:200px;
+				background-color: $blue-light-alpha;
+			}
 
-      .menu {
-        padding-top:30px;
-        padding-bottom:200px;
-        background-color: $blue-light-alpha;
-      }
+			.navbar {
+				ul {
+					padding-left:18px;
 
-      .navbar {
-        ul {
-          padding-left:18px;
+					li a {
+						@include anim(0.3s, ease-in-out);
 
-          li a {
-            @include anim(0.3s, ease-in-out);
+						font-family: exoSemiBold;
+						font-size: 20px;
+						padding: 10px;
+					}
+				}
 
-            font-family: exoSemiBold;
-            font-size: 20px;
-            padding: 10px;
-          }
-        }
+				/* make sidebar nav vertical */ 
+				@media (min-width: 768px) {
+					.navbar-collapse {
+						padding: 0;
+						max-height: none;
+					}
+					ul {
+						float: none;
+						display: block;
+					}
+					li {
+						float: none;
+						display: block;
+					}
+					li a {
+						padding-top: 12px;
+						padding-bottom: 12px;
+					}
+				}
+			}
+		}
+	}
 
-        /* make sidebar nav vertical */ 
-        @media (min-width: 768px) {
-          .navbar-collapse {
-            padding: 0;
-            max-height: none;
-          }
-          ul {
-            float: none;
-            display: block;
-          }
-          li {
-            float: none;
-            display: block;
-          }
-          li a {
-            padding-top: 12px;
-            padding-bottom: 12px;
-          }
-        }
-      }
-    }
-  }
-  .social {
-    
+	.social {
+		i {
+			@include anim(0.3s, ease-in-out);
+			font-size: 30px;
+		}
 
-    i {
-      @include anim(0.3s, ease-in-out);
-      font-size: 30px;
-    }
+		div {
+			@include anim(0.3s, ease-in-out);
 
-    div {
-      @include anim(0.3s, ease-in-out);
+			float: left;
+			background-color: $pink;
+			width: 75px;
+			height: 200px;
+			text-align:center;
+			padding-top:15px;
+		}
 
-      float: left;
-      background-color: $pink;
-      width: 75px;
-      height: 200px;
-      text-align:center;
-      padding-top:15px;
-    }
+		.col1 {
+			cursor: pointer;
+			margin-right:1px;
+			margin-top:60px;
+		}
 
-    .col1 {
-      cursor: pointer;
-      margin-right:1px;
-      margin-top:60px;
-    }
+		.col2 {
+			cursor: pointer;
+			margin-top:60px;
+		}
 
-    .col2 {
-      cursor: pointer;
-      margin-top:60px;
-    }
+		.col1:hover {
+			i {
+				color: #fff;
+			}
+		}
 
-    .col1:hover {
-      i {
-        color: #fff;
-      }
-    }
-
-    .col2:hover {
-      i {
-        color: #fff;
-      }
-    }
-  }
+		.col2:hover {
+			i {
+				color: #fff;
+			}
+		}
+	}
 }
 
 .neg-margin-200 {
-  margin-bottom: -200px;
+	margin-bottom: -200px;
 }
 
 .footer {
-  height: 293px;
-  margin: 0 auto;
+	height: 293px;
+	margin: 0 auto;
 	background-color: $pink;
-  color: #30384f;
-  font-weight: bold;
+	color: #30384f;
+	font-weight: bold;
 
-  .footer-box {
-    padding-top:88px;
-    padding-left: 50px;
-    padding-right: 50px;
+	.footer-box {
+		padding-top:88px;
+		padding-left: 50px;
+		padding-right: 50px;
 
-    .book-btn {
-      cursor: pointer;
-      border: 1px solid #fff;
-      color: #fff;
-      text-align: center;
-      width: 200px;
-      height: $btn-height;
-      line-height: $btn-height;
-      float: left;
-    }
+		.book-btn {
+			cursor: pointer;
+			border: 1px solid #fff;
+			color: #fff;
+			text-align: center;
+			width: 200px;
+			height: $btn-height;
+			line-height: $btn-height;
+			float: left;
+		}
 
-    .address {
-      margin-left: 12%;
-      line-height: $btn-height;
-      float: left;
-      font-family: exoSemiBold;
-    }
+		.address {
+			margin-left: 12%;
+			line-height: $btn-height;
+			float: left;
+			font-family: exoSemiBold;
+		}
 
-    .social {
-      float: right;
+		.social {
+			float: right;
 
-      .fa {
-        cursor:pointer;
-        color: #fff;
-        font-size: 16px;
-        margin-right: 25px;
-        line-height: $btn-height;
-      }
-    }
+			.fa {
+				cursor:pointer;
+				color: #fff;
+				font-size: 16px;
+				margin-right: 25px;
+				line-height: $btn-height;
+			}
+		}
 
-    .sign-in {
-      position: absolute;
-      right: 5px;
-      bottom: 5px;
-    }
-  }
+		.sign-in {
+			position: absolute;
+			right: 5px;
+			bottom: 5px;
+		}
+	}
 }
 
 .centre {
-  margin-left:30%;
-  margin-right:30%;
-  min-width: 900px;
-  max-width: 1200px;
-  display:block;
+	margin-left:30%;
+	margin-right:30%;
+	min-width: 900px;
+	max-width: 1200px;
+	display:block;
 }
 
 .gallery-image img{
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .bg-blue-darker {
-  z-index: 1;
-  position: relative;
-  margin-top: -250px;
-  padding: 1px 0;
-  background-color: $blue-darker;
-  height:200px;
-  left: 0px;
-  right: 0px;
+	z-index: 1;
+	position: relative;
+	margin-top: -250px;
+	padding: 1px 0;
+	background-color: $blue-darker;
+	height:200px;
+	left: 0px;
+	right: 0px;
 }
 
 .bg-blue-dark {
-  z-index: 2;
-  margin-top:125px;
-  background-color: $blue-dark;
-  min-height:200px;
+	z-index: 2;
+	margin-top:125px;
+	background-color: $blue-dark;
+	min-height:200px;
 }
 
 .callout {
-  position: relative;
-  background-color: rgba(48,55,81, 0.9);
-  color: #FFFFFF;
-  font-size: 40px;
-  line-height:36px;
+	position: relative;
+	background-color: rgba(48,55,81, 0.9);
+	color: #FFFFFF;
+	font-size: 40px;
+	line-height:36px;
 
-  z-index: 100;
+	z-index: 100;
 
-  .subcallout1 {
-    padding:60px 30px 30px 30px;
-  }
+	.subcallout1 {
+		padding:60px 30px 30px 30px;
+	}
 
-  .subcallout2 {
-    padding: 0px 30px;
-    font-size: 17px;
-    line-height: 16px;
-  }
+	.subcallout2 {
+		padding: 0px 30px;
+		font-size: 17px;
+		line-height: 16px;
+	}
 
-  .schedule {
-    cursor: pointer;
-    margin:40px 0px 0px 0px;
-    padding: 10px 0px;
-    font-family: exoSemiBold;
-    text-align: center;
-    font-size: 16px;
-    background-color: $pink;
-  }
+	.contact {
+		font-size: 10px;
+		text-align: center;
+	}
+}
 
-  .contact {
-    font-size: 10px;
-    text-align: center;
-  }
+.schedule-an-appointment {
+	cursor: pointer;
+	margin: 0px;
+	padding: 0px 0px;
+	font-family: exoSemiBold;
+	text-align: center;
+	font-size: 16px;
+	background-color: $pink;
+}
+
+.schedule-an-appointment-white {
+	@extend .schedule-an-appointment;
+	color: white;
+	height: 60px;
+	line-height: 60px;
 }
 
 .content {
-  margin-top: 250px;
-  position: relative;
-  z-index: 3;
-  color: #FFF;
-  background-color: $blue-dark;
+	margin-top: 250px;
+	position: relative;
+	z-index: 3;
+	color: #FFF;
+	background-color: $blue-dark;
 }
