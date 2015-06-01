@@ -1,5 +1,3 @@
-jd.equalize('.logo-box', '.logo-box-link', 'height', 152);
-
 jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
   var serviceGroup = serviceGroups[ix];
 

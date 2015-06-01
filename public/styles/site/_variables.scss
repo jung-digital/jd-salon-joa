@@ -27,3 +27,10 @@ $btn-height: 45px;
   -o-transition: all $sec $trans;
   transition: all $sec $trans;
 }
+
+@mixin animProps($sec, $trans, $props) {
+  -webkit-transition: $props $sec $trans;
+  -moz-transition: $props $sec $trans;
+  -o-transition: $props $sec $trans;
+  transition: $props $sec $trans;
+}

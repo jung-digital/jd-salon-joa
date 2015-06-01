@@ -3,6 +3,40 @@
 window.jd = {};
 
 /*---------------------------------------------------------------------*\
+ * fixToWindowTop
+ * Purpose: Fix an item to the top of the screen when scrolling down
+ * Author: Joshua Jung
+ * Date: 5/31/2015
+ * Requires: jQuery
+\*---------------------------------------------------------------------*/
+window.jd.fixToElementTop = function(fixeeSelector, parentSelector, offset, callback) {
+  var elem = $(fixeeSelector),
+      parentElem = $(parentSelector);
+
+  elem.css('position', 'relative');
+  elem.css('z-index', '1000');
+
+  var origPosition = elem.position();
+
+  $(parentElem).scroll(parentElemScrollHandler);
+
+  function parentElemScrollHandler() {
+    var st = $(window).scrollTop();
+
+    if (st > origPosition.top)
+    {
+      elem.css('top', ($(window).scrollTop() + offset) + 'px');
+      if (callback) callback(true, elem, st);
+    }
+    else
+    {
+      elem.css('top', origPosition.top + 'px');
+      if (callback) callback(false, elem, st);
+    }
+  }
+}
+
+/*---------------------------------------------------------------------*\
  * Distribute
  * Purpose: Redistributes divs horizontally based on their count, by applying
  * percentage widths and margins.
