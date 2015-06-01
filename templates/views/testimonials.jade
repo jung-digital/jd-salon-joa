@@ -1,0 +1,23 @@
+extends ../layouts/default
+
+block js
+    script(src="/js/testimonials.js")
+    script(src="/js/non-home.js")
+    script.
+      var testimonials = !{JSON.stringify(testimonials)};
+
+block css
+    link(href="/styles/testimonials.css", rel="stylesheet")
+  
+block content
+  .clear
+  .container-fluid.content
+    .row.row-testimonials
+      .col-lg-12
+        .centered.clear
+          .content-width.ta-left
+            h1.ta-left TESTIMONIALS.
+            each testimonial in testimonials
+              .testimonial
+                .description=testimonial.description
+                .author=testimonial.author

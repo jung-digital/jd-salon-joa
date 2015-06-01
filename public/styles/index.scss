@@ -10,9 +10,10 @@ html {
 }
 
 .home-row-1 {
-  .our-services {
-    margin-bottom:100px;
+  margin-bottom:80px;
+  margin-top: 50px;
 
+  .our-services {
     #serviceContent {
       text-align: left;
     }
@@ -29,17 +30,20 @@ html {
   background-color: #2e364c;
   padding-top:40px;
 
+  margin-bottom:50px;
+
   > * {
     @include skew(5deg);
   }
 
   .meet-the-team {
-    display:inline-block;
     margin-bottom:100px;
 
     .mtt-header {
       position: relative;
       text-align: justify;
+
+      margin-top:50px;
 
       .mtt-box {
         @extend .box;
@@ -54,7 +58,7 @@ html {
           position: absolute;
           bottom: 0px;
           text-align: left;
-          font-size: 18px;
+          font-size: 12px;
           color: #fff;
 
           .sub {
@@ -90,12 +94,13 @@ html {
       color: $blue-light;
 
       .person-name {
-        font-size:16px;
+        font-family: exoSemiBold;
+        font-size:22px;
         display: inline-block;
       }
 
       .person-role {
-        font-size:11px;
+        font-size:14px;
         display: inline-block;
       }
     }
@@ -124,7 +129,6 @@ html {
 .home-row-3 {
   position: relative;
   z-order: 2;
-  margin-top:-50px;
   background-color: #282f42;
   height:350px;
 

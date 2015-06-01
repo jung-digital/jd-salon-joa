@@ -1,13 +1,13 @@
 extends ../layouts/default
 
 block js
-    script(src="/js/index.js")
-    script.
-      var serviceGroups = !{JSON.stringify(serviceGroups)},
-          team = !{JSON.stringify(team)};
+  script.
+    var serviceGroups = !{JSON.stringify(serviceGroups)},
+        team = !{JSON.stringify(team)};
+  script(src="/js/index.js")
 
 block css
-    link(href="/styles/index.css", rel="stylesheet")
+  link(href="/styles/index.css", rel="stylesheet")
 
 block content
   .container-fluid.content.clear
@@ -27,7 +27,7 @@ block content
           .content-max-width
             h1.ta-left ABOUT THE SALON.
             .about!=about
-            a
+            a(href='/testimonials')
               .read-testimonials-btn READ TESTIMONIALS
     .row.home-row.home-row-4
       .col-lg-12
@@ -35,7 +35,7 @@ block content
           .content-max-width
             .view-photo-gallery-wrapper
               img.img-width-100(src="/images/camera.jpg")
-              a(url="/gallery.html")
+              a(href="/gallery")
                 .view-photo-gallery-btn VIEW PHOTO GALLERY
             .upcoming-events-wrapper
               h1 UPCOMING EVENTS.

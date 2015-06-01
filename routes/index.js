@@ -16,4 +16,5 @@ exports = module.exports = function(app) {
 	app.get('/', routes.views.index);
 	app.get('/gallery', routes.views.gallery);
 	app.all('/services', routes.views.services);
+  app.all('/testimonials', routes.views.testimonials);
 };

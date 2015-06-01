@@ -38,8 +38,10 @@ keystone.set('routes', require('./routes'));
 
 keystone.set('nav', {
 	'galleries': 'galleries',
+	'service-groups': 'service-groups',
 	'services': 'services',
-	'service-groups': 'service-groups'
+	'testimonials': 'testimonials',
+	'people': 'people'
 });
 
 keystone.start();

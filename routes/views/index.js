@@ -13,6 +13,7 @@ exports = module.exports = function(req, res) {
 	};
 
   view.query('serviceGroups', keystone.list('ServiceGroup').model.find().sort('sortOrder'));
+  view.query('team', keystone.list('Person').model.find().sort('sortOrder'));
 
 	view.render('index');
 };

@@ -2,19 +2,19 @@ extends ../layouts/default
 
 block js
     script(src="/js/index.js")
+    script(src="/js/non-home.js")
 
 block css
     link(href="/styles/gallery.css", rel="stylesheet")
   
 block content
-  .clear
   .container-fluid.content
     if galleries.length
       each gallery in galleries
         .row.row-galleries
-          .col-lg-12.margin-neg-200px
+          .col-lg-12
             .centered
-              .content-width
+              .content-width.clear
                 h1.ta-left PHOTO GALLERY.
                 .spacer-vertical &nbsp;
                 h2.ta-left= gallery.name

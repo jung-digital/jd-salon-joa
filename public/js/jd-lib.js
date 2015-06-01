@@ -88,7 +88,7 @@ window.jd.equalize = function(sourceSelector, targetSelector, prop, offset) {
  * Date: 5/20/2015
  * Requires: jQuery
 \*---------------------------------------------------------------------*/
-window.jd.autoNavBox = function(navNodesSelector, selNodeSelector, indexAttr, clickCallback)
+window.jd.autoNavBox = function(navNodesSelector, selNodeSelector, indexAttr, clickCallback, defaultIx)
 {
   var selBoxIx = 0,
       selBoxPos = {};
@@ -114,5 +114,14 @@ window.jd.autoNavBox = function(navNodesSelector, selNodeSelector, indexAttr, cl
     selBox.css('width', innerWidth + 'px');
     selBox.css('left', selBoxPos.left + 'px');
     selBox.css('top', selBoxPos.top + 'px');
+  }
+
+  if (defaultIx !== undefined)
+  {
+    selBoxIx = defaultIx;
+
+    clickCallback(selBoxIx);
+    
+    updateBoxSelPosSize();
   }
 }

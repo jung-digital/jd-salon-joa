@@ -72,22 +72,23 @@ html {
 
 /*========================================================* * Services
 \*========================================================*/
-.row-services .service .head {
-  font-family: exo; }
-  .row-services .service .head .name {
-    float: left;
+.row-services {
+  position: relative;
+  top: -170px; }
+  .row-services .service .head {
+    font-family: exo; }
+    .row-services .service .head .name {
+      float: left;
+      color: white;
+      font-size: 28px; }
+    .row-services .service .head .cost {
+      margin-left: 10px;
+      float: left;
+      color: #bf5677;
+      font-size: 28px; }
+  .row-services .service .description {
+    clear: both;
     color: white;
-    font-size: 28px; }
-  .row-services .service .head .cost {
-    margin-left: 10px;
-    float: left;
-    color: #bf5677;
-    font-size: 28px; }
-
-.row-services .service .description {
-  clear: both;
-  color: white;
-  font-size: 14px; }
-
-.row-services .service-content {
-  margin-bottom: 50px; }
+    font-size: 14px; }
+  .row-services .service-content {
+    margin-bottom: 50px; }

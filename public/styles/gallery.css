@@ -19,8 +19,9 @@ html {
 /*========================================================* * Galleries
 \*========================================================*/
 .row-galleries {
-  margin-top: -100px;
-  min-height: 300px; }
+  min-height: 300px;
+  position: relative;
+  top: -170px; }
 
 .gallery-image {
   -webkit-transition: all 0.3s ease-in-out;

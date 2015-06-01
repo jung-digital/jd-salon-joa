@@ -179,7 +179,30 @@ body {
   }
 }
 
+/*========================================================*\
+ * Skew
+\*========================================================*/
+.bg-blue-darker {
+  z-index: 1;
+  position: relative;
+  margin-top: -250px;
+  padding: 1px 0;
+  background-color: $blue-darker;
+  height:200px;
+  left: 0px;
+  right: 0px;
+}
 
+.bg-blue-dark {
+  z-index: 2;
+  margin-top:125px;
+  background-color: $blue-dark;
+  min-height:200px;
+}
+
+/*========================================================*\
+ * Footer
+\*========================================================*/
 .footer {
 	height: 293px;
 	margin: 0 auto;
@@ -228,38 +251,6 @@ body {
 			bottom: 5px;
 		}
 	}
-}
-
-.centre {
-	margin-left:30%;
-	margin-right:30%;
-	min-width: 900px;
-	max-width: 1200px;
-	display:block;
-}
-
-.gallery-image img{
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-.bg-blue-darker {
-	z-index: 1;
-	position: relative;
-	margin-top: -250px;
-	padding: 1px 0;
-	background-color: $blue-darker;
-	height:200px;
-	left: 0px;
-	right: 0px;
-}
-
-.bg-blue-dark {
-	z-index: 2;
-	margin-top:125px;
-	background-color: $blue-dark;
-	min-height:200px;
 }
 
 .schedule-an-appointment {
