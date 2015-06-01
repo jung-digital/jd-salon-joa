@@ -21,7 +21,7 @@ html {
 .row-galleries {
   min-height: 300px;
   position: relative;
-  top: -170px; }
+  top: -185px; }
 
 .gallery-image {
   -webkit-transition: all 0.3s ease-in-out;
@@ -34,3 +34,31 @@ html {
 
 .gallery-image:hover {
   border: 2px solid #bf5677; }
+
+.full-screen {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  opacity: 0.0;
+  position: absolute;
+  z-index: 1000;
+  top: 0%;
+  left: 25%;
+  right: 25%;
+  border: 2px solid white; }
+  .full-screen .close-gallery {
+    cursor: pointer;
+    background-color: white;
+    color: #bf5677;
+    font-family: exoSemiBold;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center; }
+  .full-screen .image {
+    width: 100%; }

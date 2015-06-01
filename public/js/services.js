@@ -17,6 +17,6 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
   console.log(finalHTML);
 
   $('.service-content').html(finalHTML);
-});
+}, 0);
 
 jd.distributeH('.os-box', 30);

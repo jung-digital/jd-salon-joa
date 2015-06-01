@@ -1,14 +1,14 @@
 extends ../layouts/default
 
 block js
-    script(src="/js/services.js")
-    script(src="/js/non-home.js")
-    script.
-      var serviceGroups = !{JSON.stringify(serviceGroups)},
-          services = !{JSON.stringify(services)};
+  script.
+    var serviceGroups = !{JSON.stringify(serviceGroups)},
+        services = !{JSON.stringify(services)};
+  script(src="/js/services.js")
+  script(src="/js/non-home.js")  
 
 block css
-    link(href="/styles/services.css", rel="stylesheet")
+  link(href="/styles/services.css", rel="stylesheet")
   
 block content
   .clear

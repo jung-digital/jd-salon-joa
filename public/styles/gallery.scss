@@ -14,7 +14,7 @@ html {
 .row-galleries {
   min-height:300px;
   position:relative;
-  top:-170px;
+  top:-185px;
 }
 
 .gallery-image {
@@ -27,4 +27,36 @@ html {
 
 .gallery-image:hover {
   border: 2px solid $pink;
+}
+
+.full-screen {
+  @include anim(0.3s, ease-in-out);
+
+  display: none;
+  opacity: 0.0;
+  position: absolute;
+  z-index: 1000;
+  top: 0%;
+  left: 25%;
+  right: 25%;
+
+  border: 2px solid white;
+
+  .close-gallery {
+    cursor:pointer;
+    background-color: white;
+    color: $pink;
+    font-family: exoSemiBold;
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+  }
 }
