@@ -28,6 +28,7 @@ html {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
   border: 2px solid white;
   width: 216px;
   height: 128px; }
@@ -45,8 +46,8 @@ html {
   position: absolute;
   z-index: 1000;
   top: 0%;
-  left: 25%;
-  right: 25%;
+  left: 15%;
+  right: 15%;
   border: 2px solid white; }
   .full-screen .close-gallery {
     cursor: pointer;

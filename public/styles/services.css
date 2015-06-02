@@ -74,7 +74,9 @@ html {
 \*========================================================*/
 .row-services {
   position: relative;
-  top: -170px; }
+  top: -200px; }
+  .row-services .os-header {
+    margin-top: 50px; }
   .row-services .service .head {
     font-family: exo; }
     .row-services .service .head .name {

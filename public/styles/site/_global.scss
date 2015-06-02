@@ -9,6 +9,16 @@ a:hover {
   color: white;
 }
 
+.back-to-top {
+  cursor: pointer;
+  font-family: exoSemiBold;
+  font-size: 14px;
+  color: white;
+  i {
+    margin-left:10px;
+  }
+}
+
 /*========================================================*\
  * Divs
 \*========================================================*/
