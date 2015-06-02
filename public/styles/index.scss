@@ -94,20 +94,7 @@ html {
       }
     }
 
-    .person-title {
-      color: $blue-light;
-
-      .person-name {
-        font-family: exoSemiBold;
-        font-size:22px;
-        display: inline-block;
-      }
-
-      .person-role {
-        font-size:14px;
-        display: inline-block;
-      }
-    }
+    
 
     .mtt-hidden {
       display: none;
@@ -124,8 +111,28 @@ html {
       padding: 20px;
     }
 
-    #personContent {
+    .person-content {
       text-align: left;
+
+      .person-title {
+        color: $blue-light;
+
+        .person-name {
+          font-family: exoSemiBold;
+          font-size:22px;
+          display: inline-block;
+        }
+
+        .person-role {
+          font-size:14px;
+          display: inline-block;
+        }
+      }
+
+      .person-description {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
     }
   }
 }
@@ -141,6 +148,8 @@ html {
   background-repeat: no-repeat;
 
   .about {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     text-align:left;
   }
 

@@ -53,7 +53,7 @@
 
 .os-content {
   font-size: 14px;
-  font-family: openSansLight;
+  font-family: 'Open Sans', sans-serif;
   text-align: left; }
 
 .os-buttons {
@@ -133,15 +133,6 @@ html {
         background: linear-gradient(rgba(180, 237, 252, 0.9), rgba(180, 237, 252, 0.9));
         border: none;
         mix-blend-mode: overlay; }
-    .home-row-2 .meet-the-team .person-title {
-      color: #b3edfc; }
-      .home-row-2 .meet-the-team .person-title .person-name {
-        font-family: exoSemiBold;
-        font-size: 22px;
-        display: inline-block; }
-      .home-row-2 .meet-the-team .person-title .person-role {
-        font-size: 14px;
-        display: inline-block; }
     .home-row-2 .meet-the-team .mtt-hidden {
       display: none; }
     .home-row-2 .meet-the-team .mtt-header:after {
@@ -151,8 +142,20 @@ html {
     .home-row-2 .meet-the-team .mtt-content {
       text-align: left;
       padding: 20px; }
-    .home-row-2 .meet-the-team #personContent {
+    .home-row-2 .meet-the-team .person-content {
       text-align: left; }
+      .home-row-2 .meet-the-team .person-content .person-title {
+        color: #b3edfc; }
+        .home-row-2 .meet-the-team .person-content .person-title .person-name {
+          font-family: exoSemiBold;
+          font-size: 22px;
+          display: inline-block; }
+        .home-row-2 .meet-the-team .person-content .person-title .person-role {
+          font-size: 14px;
+          display: inline-block; }
+      .home-row-2 .meet-the-team .person-content .person-description {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif; }
 
 .home-row-3 {
   position: relative;
@@ -163,6 +166,8 @@ html {
   background-position: right;
   background-repeat: no-repeat; }
   .home-row-3 .about {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     text-align: left; }
   .home-row-3 .read-testimonials-btn {
     cursor: pointer;
