@@ -1,3 +1,8 @@
+jd.distributeH('.os-box', 10);
+
+var uvars = getUrlVars(),
+    defaultService = uvars.s ? parseInt(uvars.s) : 0;
+
 jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
   var serviceGroup = serviceGroups[ix];
 
@@ -7,7 +12,7 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
   serviceGroup.services.forEach(function (sid) {
       var service = services[sid];
 
-      serviceTemplate.find('.name').text(service.name + ' /');
+      serviceTemplate.find('.name').text(service.name.toUpperCase() + ' /');
       serviceTemplate.find('.description').text(service.description);
       serviceTemplate.find('.cost').text('$' + service.price);
 
@@ -17,6 +22,4 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
   console.log(finalHTML);
 
   $('.service-content').html(finalHTML);
-}, 0);
-
-jd.distributeH('.os-box', 30);
+}, defaultService);

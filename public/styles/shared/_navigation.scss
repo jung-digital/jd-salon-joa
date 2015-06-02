@@ -3,10 +3,8 @@
   position:relative;
   float: left;
   
-  height: 100px;
   text-align: center;
   vertical-align: top;
-  padding:10px;
   display: inline-block;
 }
 
@@ -15,5 +13,4 @@
   position: absolute;
   border: 1px solid $blue-light;
   width: 90px;
-  height: 100px;
 }

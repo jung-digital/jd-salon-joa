@@ -12,26 +12,24 @@ block css
 block content
   .container-fluid.content.clear
     .row.home-row.home-row-1
-      .col-lg-12
-        .centered
-          h1.content-width.ta-left OUR SERVICES.
-          include index/our-services.jade
+      .col-lg-12.centered
+          .content-width
+            h1.ta-left OUR SERVICES.
+            include index/our-services.jade
     .row.home-row.home-row-2
-      .col-lg-12
-        .centered
-          h1.content-width.ta-right MEET THE TEAM.
-          include index/meet-the-team.jade
+      .col-lg-12.centered
+          .content-width
+            h1.ta-right MEET THE TEAM.
+            include index/meet-the-team.jade
     .row.home-row.home-row-3
-      .col-lg-12
-        .centered
-          .content-max-width
+      .col-lg-12.centered
+          .content-width
             h1.ta-left ABOUT THE SALON.
             .about!=about
             a(href='/testimonials')
               .read-testimonials-btn READ TESTIMONIALS
     .row.home-row.home-row-4
-      .col-lg-12
-        .centered
+      .col-lg-12.centered
           .content-max-width
             .view-photo-gallery-wrapper
               img.img-width-100(src="/images/camera.jpg")

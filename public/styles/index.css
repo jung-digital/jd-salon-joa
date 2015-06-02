@@ -2,10 +2,8 @@
   cursor: pointer;
   position: relative;
   float: left;
-  height: 100px;
   text-align: center;
   vertical-align: top;
-  padding: 10px;
   display: inline-block; }
 
 .box-sel, .os-header .os-box-sel, .home-row-2 .meet-the-team .mtt-header .mtt-box-sel {
@@ -15,23 +13,26 @@
   transition: all 0.3s ease-in-out;
   position: absolute;
   border: 1px solid #b3edfc;
-  width: 90px;
-  height: 100px; }
+  width: 90px; }
 
 .os-header {
   position: relative;
   text-align: justify; }
   .os-header .os-box {
+    height: 124px;
     width: 10%;
     margin: 0 4% 0 0; }
     .os-header .os-box .service {
+      font-family: exoLight;
       position: absolute;
-      bottom: 0px;
+      bottom: 10px;
+      left: 10px;
       text-align: left;
-      font-size: 18px;
+      font-size: 24px;
+      line-height: 24px;
       color: #fff; }
       .os-header .os-box .service .sub {
-        font-size: 12px;
+        font-size: 16px;
         color: #b3edfc; }
   .os-header .os-box:hover {
     -webkit-transition: all 0.3s ease-in-out;
@@ -39,6 +40,8 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: rgba(255, 255, 255, 0.1); }
+  .os-header .os-box-sel {
+    height: 125px; }
 
 .os-hidden {
   display: none; }
@@ -49,8 +52,23 @@
   display: inline-block; }
 
 .os-content {
-  text-align: left;
-  padding: 20px; }
+  font-size: 14px;
+  font-family: openSansLight;
+  text-align: left; }
+
+.os-buttons {
+  float: left;
+  margin-top: 40px;
+  color: #bf5677;
+  font-family: exo;
+  font-size: 21px; }
+  .os-buttons a, .os-buttons a:hover {
+    color: #bf5677; }
+  .os-buttons .view-pricing {
+    float: left; }
+  .os-buttons .make-an-appointment {
+    float: left;
+    margin-left: 50px; }
 
 html {
   background-image: url(/images/bg-home.jpg);

@@ -3,6 +3,11 @@
     .os-box-sel.hidden
     each service, ix in serviceGroups
       .os-box(id=service.id, ix=ix)
-        .service!= service.name
+        .service!= service.name.toUpperCase()
           .sub Room
-  .pull-left(id="serviceContent")
+  .os-content.pull-left
+  .os-buttons
+    .view-pricing 
+      a(href="/services") View Pricing &nbsp; &gt;
+    .make-an-appointment
+      a(href="/appointment") Make an Appointment &nbsp; &gt;

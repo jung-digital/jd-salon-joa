@@ -3,6 +3,26 @@
 window.jd = {};
 
 /*---------------------------------------------------------------------*\
+ * getUrlVars
+ * Purpose: Fix an item to the top of the screen when scrolling down
+ * Author: http://stackoverflow.com/questions/4656843/jquery-get-querystring-from-url
+ * Date: 5/31/2015
+ * Requires: jQuery
+\*---------------------------------------------------------------------*/
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+/*---------------------------------------------------------------------*\
  * fixToWindowTop
  * Purpose: Fix an item to the top of the screen when scrolling down
  * Author: Joshua Jung
@@ -47,11 +67,11 @@ window.jd.fixToElementTop = function(fixeeSelector, parentSelector, offset, call
 window.jd.distributeH = function(selector, marginTotal) {
   var all = $.makeArray($(selector));
 
-  var eachMarginPerc = Math.floor(marginTotal / all.length),
-      eachWidthPerc = Math.floor((100 - marginTotal) / all.length);
+  var eachMarginPerc = marginTotal / (all.length - 1),
+      eachWidthPerc = (100 - marginTotal) / all.length;
 
   all.forEach(function (t, ix) {
-    $(t).css('margin-right', eachMarginPerc + '%');
+    $(t).css('margin-right', ((ix < all.length-1) ? eachMarginPerc : '0') + '%');
     $(t).css('width', eachWidthPerc + '%');
   });
 }

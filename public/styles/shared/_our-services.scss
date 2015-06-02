@@ -5,18 +5,22 @@
   .os-box {
     @extend .box;
 
+    height:124px;
     width: 10%;
     margin: 0 4% 0 0;
 
     .service {
+      font-family:exoLight;
       position: absolute;
-      bottom: 0px;
+      bottom: 10px;
+      left: 10px;
       text-align: left;
-      font-size: 18px;
+      font-size: 24px;
+      line-height:24px;
       color: #fff;
 
       .sub {
-        font-size: 12px;
+        font-size: 16px;
         color: $blue-light;
       }
     }
@@ -29,6 +33,7 @@
 
   .os-box-sel {
     @extend .box-sel;
+    height:125px;
   }
 }
 
@@ -43,6 +48,28 @@
 }
 
 .os-content {
+  font-size: 14px;
+  font-family: openSansLight;
   text-align: left;
-  padding: 20px;
+}
+
+.os-buttons {
+  float:left;
+  margin-top: 40px;
+  color: $pink;
+  font-family: exo;
+  font-size: 21px;
+
+  a, a:hover {
+    color: $pink;
+  }
+
+  .view-pricing {
+    float:left;
+  }
+
+  .make-an-appointment {
+    float:left;
+    margin-left: 50px;
+  }
 }

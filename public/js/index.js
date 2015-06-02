@@ -1,5 +1,9 @@
+jd.distributeH('.os-box', 10);
+
 jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
-  $('#serviceContent').text(serviceGroups[ix].description);
+  $('.os-content').text(serviceGroups[ix].description);
+  var o = $('.view-pricing').find('a');
+  o.attr('href', '/services?s=' + ix);
 }, 0);
 
 jd.autoNavBox('.mtt-box', '.mtt-box-sel', 'ix', function (ix) {
@@ -9,5 +13,3 @@ jd.autoNavBox('.mtt-box', '.mtt-box-sel', 'ix', function (ix) {
 }, 0);
 
 jd.equalize('.logo-box', '.logo-box-link', 'height', 152);
-
-jd.distributeH('.os-box', 30);
