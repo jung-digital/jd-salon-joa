@@ -215,8 +215,6 @@ body {
 
 	.footer-box {
 		padding-top:88px;
-		padding-left: 50px;
-		padding-right: 50px;
 
 		.book-btn {
 			cursor: pointer;
@@ -230,9 +228,10 @@ body {
 		}
 
 		.address {
-			margin-left: 12%;
+			margin-left: 5%;
 			line-height: $btn-height;
 			float: left;
+      font-size: 14px;
 			font-family: exoSemiBold;
 		}
 

@@ -3,7 +3,7 @@ jd.distributeH('.os-box', 10);
 jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
   $('.os-content').text(serviceGroups[ix].description);
   var o = $('.view-pricing').find('a');
-  o.attr('href', '/services?s=' + ix);
+  o.attr('href', '/services#top?s=' + ix);
 }, 0);
 
 jd.autoNavBox('.mtt-box', '.mtt-box-sel', 'ix', function (ix) {
