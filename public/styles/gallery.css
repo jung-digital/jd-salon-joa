@@ -21,7 +21,8 @@ html {
 .row-galleries {
   min-height: 300px;
   position: relative;
-  top: -185px; }
+  margin-top: -150px;
+  padding-bottom: 100px; }
 
 .gallery-image {
   -webkit-transition: all 0.3s ease-in-out;

@@ -203,11 +203,16 @@ body {
   min-height:200px;
 }
 
+.skew-container {
+  margin-top: -200px;
+}
+
 /*========================================================*\
  * Footer
 \*========================================================*/
 .footer {
-	height: 293px;
+  padding-top: 150px;
+	height: 343px;
 	margin: 0 auto;
 	background-color: $pink;
 	color: #30384f;
@@ -286,4 +291,5 @@ body {
 	z-index: 3;
 	color: #FFF;
 	background-color: $blue-dark;
+  margin-bottom: -150px;
 }
