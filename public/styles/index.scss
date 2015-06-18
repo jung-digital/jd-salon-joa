@@ -168,20 +168,19 @@ html {
 .home-row-4 {
   position: relative;
   z-order: 3;
-  margin-top:-10px;
   background-color: #1f2535;
-  height:350px;
+  height:326px;
 
   .view-photo-gallery-wrapper {
-    margin: 50px;
+    margin: 50px 40px 25px 0px;
+    padding-right: 20px;
     position: relative;
     float: left;
-    border-right: 1px solid #4c4b4a;
     text-align: center;
 
     .view-photo-gallery-btn {
       position: absolute;
-      top: 75px;
+      top: 85px;
       left: 20px;
       cursor: pointer;
       border: 1px solid $blue-light;
@@ -191,21 +190,32 @@ html {
       height: $btn-height;
       line-height: $btn-height;
     }
+
+    .vertical-line {
+      position:absolute;
+      right: 0px;
+      top: 35px;
+      height: 156px;
+      width:1px;
+      background-color: #4c4b4a;
+    }
   }
 
   .upcoming-events-wrapper {
-    margin: 50px;
     float: left;
     text-align: left;
-    padding-top:45px;
+    padding-top:105px;
 
     h1 {
+      font-size: 54px;
       color: #fff;
       margin-bottom:10px;
     }
 
     .no-events-msg {
       color: $pink;
+      font-size: 14px;
+      font-weight: bold;
     }
   }
   
