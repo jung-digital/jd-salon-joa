@@ -3,8 +3,9 @@
     .os-box-sel.hidden
     each service, ix in serviceGroups
       .os-box(id=service.id, ix=ix)
-        .service!= service.name.toUpperCase()
-          .sub Room
+        .os-box-content
+          .service!= service.name.toUpperCase()
+            .sub Room
   .os-content.pull-left
   .os-buttons
     .view-pricing 
