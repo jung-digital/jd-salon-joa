@@ -14,6 +14,7 @@ var ServiceGroup = new keystone.List('ServiceGroup', {
 ServiceGroup.add({
   name: { type: String, required: true },
   description: { type: String, required: false },
+  descriptionHTML: { type: Types.Html, wysiwyg: true },
   publishedDate: { type: Date, default: Date.now },
   services: {type: Types.Relationship, ref: 'Service', many: true}
 });

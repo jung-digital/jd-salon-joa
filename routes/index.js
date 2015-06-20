@@ -13,8 +13,29 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function(app) {
-	app.get('/', routes.views.index);
-	app.get('/gallery', routes.views.gallery);
-	app.all('/services', routes.views.services);
-  app.all('/testimonials', routes.views.testimonials);
+	app.get('/', routeWrap(routes.views.index));
+	app.get('/gallery', routeWrap(routes.views.gallery));
+	app.all('/services', routeWrap(routes.views.services));
+  app.all('/testimonials', routeWrap(routes.views.testimonials));
 };
+
+function routeWrap (routeFunc)
+{
+  return function (req, res)
+  {
+    var view = new keystone.View(req, res);
+
+    keystone.list('Link').model.find().exec(function (err, links) {
+      
+
+      var linksByName = {};
+      links.forEach(function (l) {linksByName[l.name]=l;});
+
+      console.log(linksByName);
+
+      res.locals.links = linksByName;
+
+      routeFunc(req, res, view);  
+    });
+  };
+}

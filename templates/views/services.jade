@@ -24,8 +24,9 @@ block content
               .os-box-sel.hidden
               each serviceGroup, ix in serviceGroups
                 .os-box(id=serviceGroup.id, ix=ix)
-                  .service!= serviceGroup.name.toUpperCase()
-                    .sub Room
+                  .os-box-content
+                    .service!= serviceGroup.name.toUpperCase()
+                      .sub Room
             .service-template.hidden
               .service-box
                 .head

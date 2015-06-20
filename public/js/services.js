@@ -11,9 +11,10 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
 
   serviceGroup.services.forEach(function (sid) {
       var service = services[sid];
-
       serviceTemplate.find('.name').text(service.name.toUpperCase() + ' /');
-      serviceTemplate.find('.description').text(service.description);
+  
+      var desc = services.descriptionHTML != '' ? services.descriptionHTML : service.description;
+      serviceTemplate.find('.description').text(desc);
       serviceTemplate.find('.cost').text('$' + service.price);
 
       finalHTML += serviceTemplate.html();
@@ -22,4 +23,4 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
   console.log(finalHTML);
 
   $('.service-content').html(finalHTML);
-}, defaultService);
+}, defaultService, {left: -10, width: 10});

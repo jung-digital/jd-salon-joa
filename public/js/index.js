@@ -1,7 +1,9 @@
 jd.distributeH('.os-box', 8);
 
 jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
-  $('.os-content').text(serviceGroups[ix].description);
+  var desc = serviceGroups[ix].descriptionHTML ? serviceGroups[ix].descriptionHTML : serviceGroups[ix].description;
+  console.log(desc);
+  $('.os-content').html(desc);
 
   var o = $('.view-pricing').find('a');
   o.attr('href', '/services#top?s=' + ix);

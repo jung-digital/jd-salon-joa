@@ -1,14 +1,18 @@
 .footer
   .centered
     .content-max-width.footer-box
-      a
+      a(href=links.Schedule.uri, target='_blank')
         .book-btn BOOK ONLINE
       .address 7155 E. Colfax Ave. Denver, Colorado | 303.284.9535
       .social
-        i.fa.fa-facebook
-        i.fa.fa-twitter
-        i.fa.fa-instagram
-        i.fa.fa-yelp
+        a(href=links.Facebook.uri, target='_blank')
+          i.fa.fa-facebook
+        a(href=links.Twitter.uri, target='_blank')
+          i.fa.fa-twitter
+        a(href=links.Instagram.uri, target='_blank')
+          i.fa.fa-instagram
+        a(href=links.Yelp.uri, target='_blank')
+          i.fa.fa-yelp
       .sign-in
         ul.nav.navbar-nav
           if user
