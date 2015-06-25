@@ -25,7 +25,13 @@ html {
 body {
 	background: none;
 	margin:0;
-	border-top: 5px solid $pink;
+
+  .pink-bar {
+    border-top: 5px solid $pink;
+    left: 0px;
+    right: 0px;
+    height: 5px;
+  }
 }
 
 /*========================================================*\
@@ -59,15 +65,27 @@ body {
 			font-weight: bold;
 
 			.menu {
-				padding-top:30px;
-				padding-bottom:200px;
-				background-color: $blue-light-alpha;
+        position: relative;
+        height:240px;
+
+        .menu-inside {
+          padding-top:30px;
+          position:absolute;
+          top:0px;
+          bottom:-1000px;
+          left:0px;
+          right:0px;
+          background-color: $blue-light-alpha;
+        }
 			}
 
 			.navbar {
 				ul {
 					padding-left:18px;
 
+          li a:hover {
+            background: none;
+          }
 					li a {
 						@include anim(0.3s, ease-in-out);
 
@@ -105,10 +123,12 @@ body {
   //-------------------------------
   .col-callout {
     @extend .no-padding;
+
+    position: relative;
     width: 410px;
 
     .callout {
-      position: relative;
+      position: absolute;
       
       color: #FFFFFF;
       font-size: 46px;
@@ -204,7 +224,7 @@ body {
 }
 
 .skew-container {
-  margin-top: -200px;
+  margin-top:200px;
 }
 
 /*========================================================*\

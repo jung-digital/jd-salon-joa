@@ -16,3 +16,5 @@ jd.autoNavBox('.mtt-box', '.mtt-box-sel', 'ix', function (ix) {
 }, 0);
 
 jd.equalize('.logo-box', '.logo-box-link', 'height', 152);
+
+jd.fixToElementTop('.pink-bar', document);

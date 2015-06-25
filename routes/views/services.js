@@ -8,7 +8,7 @@ exports = module.exports = function(req, res, view) {
   locals.header = {
     showScheduleAnAppointment: true,
     showCallout: false,
-    showSocial: true
+    showSocial: false
   };
 
   keystone.list('ServiceGroup').model.find().sort('sortOrder').exec(function (err, serviceGroups) {

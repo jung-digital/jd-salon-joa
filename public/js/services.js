@@ -13,7 +13,7 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
       var service = services[sid];
       serviceTemplate.find('.name').text(service.name.toUpperCase() + ' /');
   
-      var desc = services.descriptionHTML != '' ? services.descriptionHTML : service.description;
+      var desc = (service.descriptionHTML && service.descriptionHTML != '') ? service.descriptionHTML : service.description;
       serviceTemplate.find('.description').text(desc);
       serviceTemplate.find('.cost').text('$' + service.price);
 

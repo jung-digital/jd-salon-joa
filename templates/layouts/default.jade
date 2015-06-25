@@ -29,12 +29,16 @@ html
 
   body
     #body
+      .pink-bar
+      
       +flash-messages(messages)
 
       include header.jade
+
       .skew-container
         .bg-blue-darker.skew-neg-slight
           .bg-blue-dark.skew-pos-slight
+
       .pos-relative
           block content
           include footer.jade

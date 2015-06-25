@@ -33,6 +33,8 @@ window.jd.fixToElementTop = function(fixeeSelector, parentSelector, offset, call
   var elem = $(fixeeSelector),
       parentElem = $(parentSelector);
 
+  offset = offset || 0;
+  
   elem.css('position', 'relative');
   elem.css('z-index', '1000');
 

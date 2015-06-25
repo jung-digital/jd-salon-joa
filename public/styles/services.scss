@@ -19,7 +19,8 @@ html {
   padding-bottom: 100px;
   
   .os-header {
-    margin-top:50px;
+    margin-top:70px;
+    margin-bottom:60px;
   }
 
   .service-box {
@@ -30,20 +31,21 @@ html {
       .name {
         float:left;
         color: white;
-        font-size: 28px;
+        font-size: 32px;
       }
       .cost {
         margin-left: 10px;
         float:left;
         color: $pink;
-        font-size: 28px;
+        font-size: 32px;
       }
     }
 
     .description {
-      clear:both;
-      color: white;
-      font-size: 14px;
+      clear: both;
+      font-size: 16px;
+      color: $blue-light;
+      font-family: exoLight;
     }
   }
 

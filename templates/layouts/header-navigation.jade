@@ -9,7 +9,8 @@
     a(href='/')
       img.img-width-100(src='/images/logo.png')
   div(role="navigation").navbar.menu
-    .container-fluid
-        ul.nav.navbar-nav.navbar-left
-          each link in navLinks
-            li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+    .menu-inside
+      .container-fluid
+          ul.nav.navbar-nav.navbar-left
+            each link in navLinks
+              li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label

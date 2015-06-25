@@ -9,7 +9,7 @@ exports = module.exports = function(req, res) {
   locals.header = {
     showScheduleAnAppointment: true,
     showCallout: false,
-    showSocial: true
+    showSocial: false
   };
 
   view.query('testimonials', keystone.list('Testimonial').model.find().sort('sortOrder'));

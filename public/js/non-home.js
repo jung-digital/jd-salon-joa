@@ -4,7 +4,7 @@ jd.fixToElementTop('.schedule-an-appointment-fixed', document, -10, function (fi
   if (fixed) {
     elem.css('font-size', '14px');
     elem.css('height', '40px');
-    elem.css('line-height', '40px');
+    elem.css('line-height', '45px');
   }
   else {
     elem.css('font-size', '18px');
@@ -12,3 +12,5 @@ jd.fixToElementTop('.schedule-an-appointment-fixed', document, -10, function (fi
     elem.css('line-height', '60px');
   }
 });
+
+jd.fixToElementTop('.pink-bar', document);
