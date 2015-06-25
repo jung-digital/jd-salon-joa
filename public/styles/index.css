@@ -29,7 +29,15 @@
       right: 0px;
       top: 0px;
       bottom: 0px; }
+      .os-header .os-box .os-box-content .service-selected {
+        color: #b3edfc !important; }
+      .os-header .os-box .os-box-content .service:hover {
+        color: #b3edfc; }
       .os-header .os-box .os-box-content .service {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         font-family: exoLight;
         position: absolute;
         bottom: 10px;
@@ -40,14 +48,10 @@
         color: #fff;
         max-width: 70px; }
         .os-header .os-box .os-box-content .service .sub {
+          padding-top: 2px;
           font-size: 16px;
-          color: #b3edfc; }
-    .os-header .os-box .os-box-content:hover {
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      background-color: rgba(255, 255, 255, 0.1); }
+          color: #b3edfc;
+          letter-spacing: 3px; }
   .os-header .os-box-sel {
     height: 125px; }
 
@@ -62,7 +66,8 @@
 .os-content {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  text-align: left; }
+  text-align: left;
+  line-height: 23px; }
 
 .os-buttons {
   float: left;
@@ -79,15 +84,11 @@
     margin-left: 50px; }
 
 html {
-  background-image: url(/images/bg-home.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background-image: url(/images/bg-home.jpg); }
 
 .home-row-1 {
   margin-bottom: 80px;
-  margin-top: 50px; }
+  margin-top: 90px; }
   .home-row-1 .our-services #serviceContent {
     text-align: left; }
 
@@ -163,29 +164,35 @@ html {
           display: inline-block; }
       .home-row-2 .meet-the-team .person-content .person-description {
         font-size: 14px;
-        font-family: 'Open Sans', sans-serif; }
+        font-family: 'Open Sans', sans-serif;
+        line-height: 23px; }
 
 .home-row-3 {
+  padding-top: 75px;
   position: relative;
   z-order: 2;
   background-color: #282f42;
-  height: 350px;
+  height: 425px;
   background-image: url(/images/store-front.png);
   background-position: right;
   background-repeat: no-repeat; }
   .home-row-3 .about {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
-    text-align: left; }
+    text-align: left;
+    line-height: 23px; }
   .home-row-3 .read-testimonials-btn {
+    font-family: exoSemiBold;
+    letter-spacing: 1px;
     cursor: pointer;
-    border: 1px solid #b3edfc;
+    border: 2px solid #b3edfc;
     color: #b3edfc;
     text-align: center;
     width: 200px;
     height: 45px;
     line-height: 45px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 12px; }
 
 .home-row-4 {
   position: relative;
@@ -199,16 +206,19 @@ html {
     float: left;
     text-align: center; }
     .home-row-4 .view-photo-gallery-wrapper .view-photo-gallery-btn {
+      font-family: exoSemiBold;
+      letter-spacing: 1px;
       position: absolute;
       top: 85px;
       left: 20px;
       cursor: pointer;
-      border: 1px solid #b3edfc;
+      border: 2px solid #b3edfc;
       color: #b3edfc;
       text-align: center;
       width: 200px;
       height: 45px;
-      line-height: 45px; }
+      line-height: 45px;
+      font-size: 12px; }
     .home-row-4 .view-photo-gallery-wrapper .vertical-line {
       position: absolute;
       right: 0px;

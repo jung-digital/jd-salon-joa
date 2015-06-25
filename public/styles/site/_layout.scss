@@ -16,14 +16,16 @@ html {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: 100%;
 	background-color: $blue-dark;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+  background-position: top;
 }
 
 body {
 	background: none;
+
 	margin:0;
 
   .pink-bar {
@@ -72,7 +74,7 @@ body {
           padding-top:30px;
           position:absolute;
           top:0px;
-          bottom:-1000px;
+          bottom:-250px;
           left:0px;
           right:0px;
           background-color: $blue-light-alpha;
@@ -138,22 +140,23 @@ body {
       z-index: 100;
 
       .subcallout1 {
-        background-color: rgba(48,55,81, 0.92);
+        background-color: rgba(48,55,81, 0.5);
         padding:60px 30px 30px 30px;
       }
 
       .subcallout2 {
-        background-color: rgba(48,55,81, 0.92);
-        padding: 0px 30px;
+        background-color: rgba(48,55,81, 0.5);
+        padding: 0px 30px 30px;
         font-size: 24px;
         line-height: 22px;
-        padding-bottom:20px;
       }
 
       .contact {
         font-size: 13px;
         text-align: center;
         font-family: exoLight;
+        color: $blue-light;
+        letter-spacing:1px;
       }
     }
   }
@@ -178,9 +181,9 @@ body {
         float: left;
         background-color: $pink;
         width: 75px;
-        height: 200px;
+        height: 175px;
         text-align:center;
-        padding-top:15px;
+        padding-top:35px;
       }
 
       .share-box:hover {
@@ -191,12 +194,12 @@ body {
 
       .sb1 {
         margin-right:1px;
-        margin-top:60px;
+        margin-top:100px;
       }
 
       .sb2 {
         cursor: pointer;
-        margin-top:60px;
+        margin-top:100px;
       }
     }
   }
@@ -218,7 +221,7 @@ body {
 
 .bg-blue-dark {
   z-index: 2;
-  margin-top:125px;
+  margin-top:160px;
   background-color: $blue-dark;
   min-height:200px;
 }
@@ -232,7 +235,7 @@ body {
 \*========================================================*/
 .footer {
   padding-top: 150px;
-	height: 343px;
+	height: 450px;
 	margin: 0 auto;
 	background-color: $pink;
 	color: #30384f;
@@ -242,14 +245,17 @@ body {
 		padding-top:88px;
 
 		.book-btn {
+      font-family: exoSemiBold;
+      letter-spacing:1px;
 			cursor: pointer;
-			border: 1px solid #fff;
+			border: 2px solid #fff;
 			color: #fff;
 			text-align: center;
-			width: 200px;
+			width: 140px;
 			height: $btn-height;
 			line-height: $btn-height;
 			float: left;
+      font-size:12px;
 		}
 
 		.address {
@@ -286,11 +292,12 @@ body {
 	padding: 0px 0px;
 	font-family: exoSemiBold;
 	text-align: center;
-	font-size: 18px;
+	font-size: 21px;
 	background-color: $pink;
   height:100px;
   line-height:100px;
   color: white;
+  letter-spacing:2px;
 }
 
 .schedule-an-appointment-fixed {
@@ -301,9 +308,11 @@ body {
   -o-transition: font-size 0.3s, height 0.3s;
   transition: font-size 0.3s, height 0.3s;
 
+  font-size: 18px;
 	color: white;
 	height: 60px;
 	line-height: 60px;
+  letter-spacing:0px;
 }
 
 .content {

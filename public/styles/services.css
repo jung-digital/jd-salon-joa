@@ -42,7 +42,15 @@
       right: 0px;
       top: 0px;
       bottom: 0px; }
+      .os-header .os-box .os-box-content .service-selected {
+        color: #b3edfc !important; }
+      .os-header .os-box .os-box-content .service:hover {
+        color: #b3edfc; }
       .os-header .os-box .os-box-content .service {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         font-family: exoLight;
         position: absolute;
         bottom: 10px;
@@ -53,14 +61,10 @@
         color: #fff;
         max-width: 70px; }
         .os-header .os-box .os-box-content .service .sub {
+          padding-top: 2px;
           font-size: 16px;
-          color: #b3edfc; }
-    .os-header .os-box .os-box-content:hover {
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      background-color: rgba(255, 255, 255, 0.1); }
+          color: #b3edfc;
+          letter-spacing: 3px; }
   .os-header .os-box-sel {
     height: 125px; }
 
@@ -75,7 +79,8 @@
 .os-content {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  text-align: left; }
+  text-align: left;
+  line-height: 23px; }
 
 .os-buttons {
   float: left;
@@ -100,7 +105,7 @@ html {
 \*========================================================*/
 .row-services {
   position: relative;
-  margin-top: -150px;
+  margin-top: -130px;
   padding-bottom: 100px; }
   .row-services .os-header {
     margin-top: 70px;

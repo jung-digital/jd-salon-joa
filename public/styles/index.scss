@@ -4,10 +4,6 @@
 
 html {
   background-image: url(/images/bg-home.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .home-row {
@@ -15,7 +11,7 @@ html {
 
 .home-row-1 {
   margin-bottom:80px;
-  margin-top: 50px;
+  margin-top: 90px;
 
   .our-services {
     #serviceContent {
@@ -94,8 +90,6 @@ html {
       }
     }
 
-    
-
     .mtt-hidden {
       display: none;
     }
@@ -132,16 +126,18 @@ html {
       .person-description {
         font-size: 14px;
         font-family: 'Open Sans', sans-serif;
+        line-height: 23px;
       }
     }
   }
 }
 
 .home-row-3 {
+  padding-top:75px;
   position: relative;
   z-order: 2;
   background-color: #282f42;
-  height:350px;
+  height:425px;
 
   background-image: url(/images/store-front.png);
   background-position: right;
@@ -151,17 +147,21 @@ html {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-align:left;
+    line-height: 23px;
   }
 
   .read-testimonials-btn {
+    font-family: exoSemiBold;
+    letter-spacing:1px;
     cursor: pointer;
-    border: 1px solid $blue-light;
+    border: 2px solid $blue-light;
     color: $blue-light;
     text-align: center;
     width: 200px;
     height: $btn-height;
     line-height: $btn-height;
     margin-top:20px;
+    font-size:12px;
   }
 }
 
@@ -179,16 +179,19 @@ html {
     text-align: center;
 
     .view-photo-gallery-btn {
+      font-family: exoSemiBold;
+      letter-spacing:1px;
       position: absolute;
       top: 85px;
       left: 20px;
       cursor: pointer;
-      border: 1px solid $blue-light;
+      border: 2px solid $blue-light;
       color: $blue-light;
       text-align: center;
       width: 200px;
       height: $btn-height;
       line-height: $btn-height;
+      font-size:12px;
     }
 
     .vertical-line {

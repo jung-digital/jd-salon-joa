@@ -3,8 +3,17 @@ jd.distributeH('.os-box', 10);
 var uvars = getUrlVars(),
     defaultService = uvars.s ? parseInt(uvars.s) : 0;
 
-jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix) {
-  var serviceGroup = serviceGroups[ix];
+var lastSelected = undefined;
+
+jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix, elem) {
+  var serviceElem = elem.find('.service'),
+      serviceGroup = serviceGroups[ix];
+
+  if (lastSelected)
+    lastSelected.removeClass('service-selected');
+
+  serviceElem.addClass('service-selected');
+  lastSelected = serviceElem;
 
   var finalHTML = '',
       serviceTemplate = $('.service-template').clone();

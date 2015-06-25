@@ -14,18 +14,26 @@ html {
 \*========================================================*/
 .row-testimonials {
   position: relative;
-  top:-180px;
+  top:-120px;
 
-  .testimonial {
-    margin-top: 50px;
+  .testimonial-container {
+    margin-top:120px;
 
-    .description {
-      color: white;
-      font-size: 18px;
-    }
-    .author {
-      color: $pink;
-      font-size: 12px;
+    .testimonial {
+      margin-top: 50px;
+
+      .description {
+        font-family: exo;
+        color: white;
+        font-size: 25px;
+      }
+
+      .author {
+        font-family: exo;
+        color: $pink;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
     }
   }
 }

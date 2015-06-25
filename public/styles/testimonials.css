@@ -37,12 +37,17 @@ html {
 \*========================================================*/
 .row-testimonials {
   position: relative;
-  top: -180px; }
-  .row-testimonials .testimonial {
-    margin-top: 50px; }
-    .row-testimonials .testimonial .description {
-      color: white;
-      font-size: 18px; }
-    .row-testimonials .testimonial .author {
-      color: #bf5677;
-      font-size: 12px; }
+  top: -120px; }
+  .row-testimonials .testimonial-container {
+    margin-top: 120px; }
+    .row-testimonials .testimonial-container .testimonial {
+      margin-top: 50px; }
+      .row-testimonials .testimonial-container .testimonial .description {
+        font-family: exo;
+        color: white;
+        font-size: 25px; }
+      .row-testimonials .testimonial-container .testimonial .author {
+        font-family: exo;
+        color: #bf5677;
+        font-size: 14px;
+        letter-spacing: 1px; }

@@ -126,7 +126,7 @@ window.jd.autoNavBox = function(navNodesSelector, selNodeSelector, indexAttr, cl
   function updateBoxSel() {
     selBoxIx = parseInt($(this).attr(indexAttr));
 
-    clickCallback(selBoxIx);
+    clickCallback(selBoxIx, $(this));
 
     updateBoxSelPosSize();
   }
@@ -147,7 +147,8 @@ window.jd.autoNavBox = function(navNodesSelector, selNodeSelector, indexAttr, cl
   {
     selBoxIx = defaultIx;
 
-    clickCallback(selBoxIx);
+    var all = $.makeArray($(navNodesSelector));
+    clickCallback(selBoxIx, $(all[0]));
     
     updateBoxSelPosSize();
   }

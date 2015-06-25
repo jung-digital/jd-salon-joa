@@ -17,7 +17,15 @@
       top:0px;
       bottom:0px;
 
+      .service-selected {
+        color: $blue-light !important;
+      }
+
+      .service:hover {
+        color: $blue-light;
+      }
       .service {
+        @include anim(0.3s, ease-in-out);
         font-family:exoLight;
         position: absolute;
         bottom: 10px;
@@ -29,19 +37,14 @@
         max-width: 70px;
 
         .sub {
+        padding-top:2px;
           font-size: 16px;
           color: $blue-light;
+          letter-spacing:3px;
         }
       }
     }
-
-    .os-box-content:hover {
-      @include anim(0.3s, ease-in-out);
-      background-color: rgba(255,255,255, 0.1);
-    }
   }
-
-  
 
   .os-box-sel {
     @extend .box-sel;
@@ -63,6 +66,7 @@
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   text-align: left;
+  line-height:23px;
 }
 
 .os-buttons {

@@ -19,11 +19,13 @@ block content
     .row.home-row.home-row-2
       .col-lg-12.centered
           .content-width
+            a(id='team')
             h1.ta-right MEET THE TEAM.
             include index/meet-the-team.jade
     .row.home-row.home-row-3
       .col-lg-12.centered
           .content-width
+            a(id='salon')
             h1.ta-left ABOUT THE SALON.
             .about!=about
             a(href='/testimonials')
@@ -31,6 +33,7 @@ block content
     .row.home-row.home-row-4
       .col-lg-12.centered
           .content-max-width
+            a(id='events')
             .view-photo-gallery-wrapper
               img.img-width-100(src="/images/camera.jpg")
               .vertical-line &nbsp;

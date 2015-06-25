@@ -16,13 +16,13 @@
         {
         	"label": "OUR TEAM",
         	"key":"ourTeam",
-        	"href":"/ourTeam",
+        	"href":"/#team",
         	"showInNav": true
         },
         {
         	"label": "THE SALON",
         	"key":"theSalon",
-        	"href":"/theSalon",
+        	"href":"/#salon",
         	"showInNav": true
         },
         {
@@ -34,7 +34,7 @@
         {
         	"label": "EVENTS",
         	"key":"events",
-        	"href":"/events",
+        	"href":"/#events",
         	"showInNav": true
         }
     ]
