@@ -7,7 +7,8 @@ var keystone = require('keystone'),
  */
 
 var Person = new keystone.List('Person', {
-  autokey: { from: 'name', path: 'key', unique: true }
+  autokey: { from: 'name', path: 'key', unique: true },
+  sortable: true
 });
 
 Person.add({
