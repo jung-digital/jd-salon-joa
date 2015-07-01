@@ -136,11 +136,13 @@ window.jd.autoNavBox = function(navNodesSelector, selNodeSelector, indexAttr, cl
         selBoxPos = $(navNodesSelector + '[' + indexAttr + '=\'' + selBoxIx + '\']').position(),
         selBox = $(selNodeSelector);
 
-    selBox.removeClass('hidden');
+    if (selBox) {
+      selBox.removeClass('hidden');
 
-    selBox.css('width', (innerWidth + offsets.width) + 'px');
-    selBox.css('left', (selBoxPos.left + offsets.left) + 'px');
-    selBox.css('top', (selBoxPos.top + offsets.top) + 'px');
+      selBox.css('width', (innerWidth + offsets.width) + 'px');
+      selBox.css('left', (selBoxPos.left + offsets.left) + 'px');
+      selBox.css('top', (selBoxPos.top + offsets.top) + 'px');
+    }
   }
 
   if (defaultIx !== undefined)

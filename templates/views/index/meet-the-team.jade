@@ -1,7 +1,7 @@
 .meet-the-team.content-max-width
   .mtt-header
     each person, ix in team
-      .mtt-box(id=person.id, ix=ix)
+      .mtt-box.mtt-box-desel(id=person.id, ix=ix)
         img.img-max-width-100(src=person.heroImage.secure_url)
     .mtt-box-sel.hidden
   .person-content.pull-left

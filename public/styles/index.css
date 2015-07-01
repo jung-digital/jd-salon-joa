@@ -6,7 +6,7 @@
   vertical-align: top;
   display: inline-block; }
 
-.box-sel, .os-header .os-box-sel, .home-row-2 .meet-the-team .mtt-header .mtt-box-sel {
+.box-sel, .os-header .os-box-sel {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -135,13 +135,14 @@ html {
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        background-color: rgba(255, 255, 255, 0.1); }
+        background-color: #b4edfc;
+        background-blend-mode: overlay; }
+      .home-row-2 .meet-the-team .mtt-header .mtt-box-desel {
+        background-color: #b0617a;
+        background-blend-mode: overlay; }
       .home-row-2 .meet-the-team .mtt-header .mtt-box-sel {
-        height: 136px;
-        padding: 0px;
-        background: linear-gradient(rgba(180, 237, 252, 0.9), rgba(180, 237, 252, 0.9));
-        border: none;
-        mix-blend-mode: overlay; }
+        background-color: #b4edfc;
+        background-blend-mode: overlay; }
     .home-row-2 .meet-the-team .mtt-hidden {
       display: none; }
     .home-row-2 .meet-the-team .mtt-header:after {

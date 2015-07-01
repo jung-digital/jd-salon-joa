@@ -70,23 +70,19 @@ html {
 
       .mtt-box:hover {
         @include anim(0.3s, ease-in-out);
-        background-color: rgba(255,255,255, 0.1);
+
+        background-color: rgba(180, 237, 252, 1.0);
+        background-blend-mode: overlay;
+      }
+
+      .mtt-box-desel {
+        background-color: #b0617a;
+        background-blend-mode: overlay;
       }
 
       .mtt-box-sel {
-        @extend .box-sel;
-
-        height:136px;
-        padding:0px;
-
-        background: linear-gradient(
-          rgba(180, 237, 252, 0.90), 
-          rgba(180, 237, 252, 0.90)
-        );
-
-        border: none;
-
-        mix-blend-mode: overlay;
+        background-color: rgba(180, 237, 252, 1.0);
+        background-blend-mode: overlay;
       }
     }
 
