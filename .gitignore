@@ -34,4 +34,4 @@ node_modules
 *.swp
 
 # Generated
-public/styles/site.css
+public/styles/*.css

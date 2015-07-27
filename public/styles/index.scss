@@ -32,6 +32,15 @@ html {
 
   margin-bottom:50px;
 
+  .fill {
+    bottom: -100px;
+    height: 500px;
+    left: 0px;
+    right: 0px;
+    position:absolute;
+    background-color: #2e364c;
+  }
+
   > * {
     @include skew(5deg);
   }
@@ -43,12 +52,11 @@ html {
       position: relative;
       text-align: justify;
 
+      margin-right: 8px;
       margin-top:50px;
 
       .mtt-box {
         @extend .box;
-
-        float: right;
 
         width: 136px;
         height: 136px;
@@ -102,6 +110,8 @@ html {
     }
 
     .person-content {
+      margin-top: 10px;
+
       text-align: left;
 
       .person-title {
