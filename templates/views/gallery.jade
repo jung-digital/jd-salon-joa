@@ -22,10 +22,13 @@ block content
               .content-width.clear
                 h1.ta-left PHOTO GALLERY.
                 .spacer-vertical &nbsp;
+                
+          .col-lg-12
+            .centered
+              .gallery-width.clear
                 h2.ta-left= gallery.name
-
                 each image in gallery.images
                   .col-xs-6.col-sm-4.col-md-3.gallery-image.no-padding
-                    img(src=image.fill(212,124),onClick='openGalleryImage(event)',cloudinaryURL=image.secure_url)
+                    img(src=image.fill(202,124),onClick='openGalleryImage(event)',cloudinaryURL=image.secure_url)
     else
       h3.text-muted There are no image galleries yet.
