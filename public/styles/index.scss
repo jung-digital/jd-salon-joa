@@ -129,7 +129,7 @@ html {
 }
 
 .home-row-3 {
-  padding-top:75px;
+  padding-top:50px;
   position: relative;
   z-order: 2;
   background-color: #282f42;
@@ -156,7 +156,7 @@ html {
     width: 200px;
     height: $btn-height;
     line-height: $btn-height;
-    margin-top:20px;
+    margin-top:30px;
     font-size:12px;
   }
 }
@@ -168,7 +168,7 @@ html {
   height:326px;
 
   .view-photo-gallery-wrapper {
-    margin: 50px 40px 25px 0px;
+    margin: 50px 40px 25px -20px;
     padding-right: 20px;
     position: relative;
     float: left;
