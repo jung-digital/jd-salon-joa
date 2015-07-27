@@ -135,7 +135,7 @@
 }
 
 .home-row-3 {
-  padding-top:50px;
+  padding-top:30px;
   position: relative;
   z-order: 2;
   background-color: #282f42;
@@ -150,6 +150,10 @@
     font-family: 'Open Sans', sans-serif;
     text-align:left;
     line-height: 23px;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   .read-testimonials-btn {
