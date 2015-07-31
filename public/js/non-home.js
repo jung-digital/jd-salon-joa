@@ -1,16 +1,12 @@
-jd.equalize('.logo-box', '.logo-box-link', 'height', 152);
+jd.equalize('.logo-box', '.logo-box-link', 'height', 153);
 
-jd.fixToElementTop('.schedule-an-appointment-fixed', document, -10, function (fixed, elem, top) {
-  if (fixed) {
-    elem.css('font-size', '14px');
-    elem.css('height', '40px');
-    elem.css('line-height', '45px');
-  }
-  else {
-    elem.css('font-size', '18px');
-    elem.css('height', '60px');
-    elem.css('line-height', '60px');
-  }
-});
+var schedule = $('.schedule-an-appointment-fixed');
 
-jd.fixToElementTop('.pink-bar', document);
+$(document).scroll(documentScrollHandler);
+
+function documentScrollHandler() {
+  var st = $(window).scrollTop();
+
+  if (st > 0) schedule.addClass('schedule-an-appointment-fixed-scrolled');
+  else schedule.removeClass('schedule-an-appointment-fixed-scrolled');
+}

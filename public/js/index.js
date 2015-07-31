@@ -38,6 +38,6 @@ jd.autoNavBox('.mtt-box', undefined, 'ix', function (ix, elem) {
   $('.person-description').text(team[ix].description);
 }, 0);
 
-jd.equalize('.logo-box', '.logo-box-link', 'height', 152);
+jd.equalize('.logo-box', '.logo-box-link', 'height', 153);
 
-jd.fixToElementTop('.pink-bar', document);
+//jd.fixToElementTop('.pink-bar', document);

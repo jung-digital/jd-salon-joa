@@ -23,7 +23,7 @@ function getUrlVars()
 }
 
 /*---------------------------------------------------------------------*\
- * fixToWindowTop
+ * fixToElementTop
  * Purpose: Fix an item to the top of the screen when scrolling down
  * Author: Joshua Jung
  * Date: 5/31/2015
@@ -34,7 +34,7 @@ window.jd.fixToElementTop = function(fixeeSelector, parentSelector, offset, call
       parentElem = $(parentSelector);
 
   offset = offset || 0;
-  
+
   elem.css('position', 'relative');
   elem.css('z-index', '1000');
 
@@ -47,7 +47,7 @@ window.jd.fixToElementTop = function(fixeeSelector, parentSelector, offset, call
 
     if (st > origPosition.top)
     {
-      elem.css('top', ($(window).scrollTop() + offset) + 'px');
+      elem.css('top', Math.floor($(window).scrollTop() + offset) + 'px');
       if (callback) callback(true, elem, st);
     }
     else

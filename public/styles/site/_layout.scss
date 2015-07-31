@@ -29,10 +29,13 @@ body {
 	margin:0;
 
   .pink-bar {
+  	position:fixed;
     border-top: 5px solid $pink;
     left: 0px;
     right: 0px;
+    top: 0px;
     height: 5px;
+    z-index: 1000;
   }
 }
 
@@ -302,25 +305,36 @@ body {
 	text-align: center;
 	font-size: 21px;
 	background-color: $pink;
-  height:100px;
-  line-height:100px;
+  height: 100px;
+  line-height: 100px;
   color: white;
-  letter-spacing:2px;
+  letter-spacing: 2px;
 }
 
 .schedule-an-appointment-fixed {
 	@extend .schedule-an-appointment;
+
+	position: fixed;
+	top: 0px;
 
   -webkit-transition: font-size 0.3s, height 0.3s;
   -moz-transition: font-size 0.3s, height 0.3s;
   -o-transition: font-size 0.3s, height 0.3s;
   transition: font-size 0.3s, height 0.3s;
 
+	z-index: 1000;
   font-size: 18px;
 	color: white;
 	height: 60px;
-	line-height: 60px;
-  letter-spacing:0px;
+	line-height: 62px;
+  letter-spacing: 0px;
+  width: 316px;
+}
+
+.schedule-an-appointment-fixed-scrolled {
+	font-size: 14px;
+	line-height: 45px;
+	height: 40px;
 }
 
 .content {
