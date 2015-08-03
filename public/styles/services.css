@@ -104,7 +104,9 @@
   padding-bottom: 100px; }
   .row-services .os-header {
     margin-top: 70px;
-    margin-bottom: 60px; }
+    margin-bottom: 30px; }
+  .row-services .service-group-description {
+    margin-bottom: 40px; }
   .row-services .service-box {
     margin-bottom: 40px; }
     .row-services .service-box .head {

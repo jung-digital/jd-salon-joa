@@ -18,6 +18,10 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix, elem) {
   var finalHTML = '',
       serviceTemplate = $('.service-template').clone();
 
+  // Group Description
+  finalHTML = '<div class="service-group-description">' + (serviceGroup.descriptionHTML ? serviceGroup.descriptionHTML : serviceGroup.description)  + '</div>';
+
+  // Services / Cost
   serviceGroup.services.forEach(function (sid) {
       var service = services[sid];
       serviceTemplate.find('.name').text(service.name.toUpperCase() + ' /');
@@ -28,8 +32,6 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix, elem) {
 
       finalHTML += serviceTemplate.html();
   });
-
-  console.log(finalHTML);
 
   $('.service-content').html(finalHTML);
 }, defaultService, {left: -10, width: 10});
