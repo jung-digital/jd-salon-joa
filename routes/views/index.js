@@ -12,7 +12,7 @@ exports = module.exports = function(req, res) {
     showSocial: true
   };
 
-  view.query('serviceGroups', keystone.list('ServiceGroup').model.find().sort('sortOrder'));
+  view.query('serviceGroups', keystone.list('ServiceGroup').model.find({visible: true}).sort('sortOrder'));
   view.query('team', keystone.list('Person').model.find().sort('sortOrder'));
 
   keystone.list('Content').model.find().exec(function (err, contents) {

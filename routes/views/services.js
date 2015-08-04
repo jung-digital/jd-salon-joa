@@ -11,7 +11,7 @@ exports = module.exports = function(req, res, view) {
     showSocial: false
   };
 
-  keystone.list('ServiceGroup').model.find().sort('sortOrder').exec(function (err, serviceGroups) {
+  keystone.list('ServiceGroup').model.find({visible: true}).sort('sortOrder').exec(function (err, serviceGroups) {
     locals.serviceGroups = serviceGroups;
 
     keystone.list('Service').model.find().exec(function (err, services ) {

@@ -16,7 +16,10 @@ ServiceGroup.add({
   description: { type: String, required: false },
   descriptionHTML: { type: Types.Html, wysiwyg: true },
   publishedDate: { type: Date, default: Date.now },
-  services: {type: Types.Relationship, ref: 'Service', many: true}
+  services: {type: Types.Relationship, ref: 'Service', many: true},
+  visible: {type: Types.Boolean, default: true}
 });
+
+ServiceGroup.defaultColumns = 'name, visible';
 
 ServiceGroup.register();
