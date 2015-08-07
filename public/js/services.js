@@ -28,7 +28,14 @@ jd.autoNavBox('.os-box', '.os-box-sel', 'ix', function (ix, elem) {
   
       var desc = (service.descriptionHTML && service.descriptionHTML != '') ? service.descriptionHTML : service.description;
       serviceTemplate.find('.description').text(desc);
-      serviceTemplate.find('.cost').text('$' + service.price);
+      if (service.priceMaximum)
+      {
+        var min = service.price;
+        var max = service.priceMaximum;
+
+        serviceTemplate.find('.cost').text('$' + min + ' - ' + max);
+      }
+      else serviceTemplate.find('.cost').text('$' + service.price);
 
       finalHTML += serviceTemplate.html();
   });
