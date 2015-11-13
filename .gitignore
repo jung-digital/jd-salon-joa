@@ -35,3 +35,4 @@ node_modules
 
 # Generated
 public/styles/*.css
+.idea

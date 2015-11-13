@@ -3,32 +3,45 @@ extends ../layouts/default
 block js
     script(src="/js/gallery.js")
     script(src="/js/non-home.js")
+    script.
+      window.galleries = !{JSON.stringify(galleries)};
+      window.galleryById = {};
+      window.galleries.forEach(function (g) {
+        window.galleryById[g._id] = g;
+      });
 
 block css
     link(href="/styles/gallery.css", rel="stylesheet")
   
 block content
   .full-screen
-    img.image
-    .close-gallery(onClick='closeGalleryImage()')
-      a x
+    .relative-wrapper
+      img.image
+      .close-gallery(onClick='closeGalleryImage()')
+        a x
+      .next(onClick='nextImage(event)')
+        a
+          i.fa.fa-angle-double-right
+      .prev(onClick='prevImage(event)')
+        a
+          i.fa.fa-angle-double-left
 
   .container-fluid.content
     if galleries.length
+      .row.row-galleries-top
+        .col-lg-12
+          .centered
+            .content-width.clear
+              h1.ta-left PHOTO GALLERY.
+              .spacer-vertical &nbsp;
       each gallery in galleries
         .row.row-galleries
           .col-lg-12
             .centered
-              .content-width.clear
-                h1.ta-left PHOTO GALLERY.
-                .spacer-vertical &nbsp;
-                
-          .col-lg-12
-            .centered
               .gallery-width.clear
                 h2.ta-left= gallery.name
-                each image in gallery.images
+                each image, ix in gallery.images
                   .col-xs-6.col-sm-4.col-md-3.gallery-image.no-padding
-                    img(src=image.fill(202,124),onClick='openGalleryImage(event)',cloudinaryURL=image.secure_url)
+                    img(src=image.fill(202,124),onClick='openGalleryImage(event)',gId=gallery._id, ix=ix)
     else
       h3.text-muted There are no image galleries yet.
