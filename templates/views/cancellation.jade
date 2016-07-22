@@ -1,0 +1,29 @@
+extends ../layouts/default
+
+block js
+    script(src="/js/non-home.js")
+
+block css
+    link(href="/styles/cancellations.css", rel="stylesheet")
+  
+block content
+  .container-fluid.content
+    .row
+      .col-lg-12.centered
+        .content-width
+          h1 CANCELLATIONS.
+          div We strive to provide excellent service to our guests. Cancellations and No-Shows leave gaps in our schedules that cannot be filled without timely notice and prevent us from being able to accommodate other guests waiting for appointments.
+          h2 You Must Provide At Least:
+          ul
+            li 24-hours notice for appointments under 2-hours in duration
+            li 48-hours notice for appointments with a duration of 2-hours or more
+          .break
+          div Guests who cancel their appointments without proper notice or do not show up for their reserved appointment times are considered a "No-show".
+          h3 First No-Show:
+          div If you No-Show for a scheduled appointment, you will receive a telephone call from us informing you that you missed a scheduled appointment and we will reschedule the missed appointment for a time convenient for you. At this time, we will remind you that a second No-Show appointment will require a charge.
+          h3 Second No-Show:
+          div If you No-Show for a scheduled appointment for a second time, you will be required from that point forward to put down 50% deposit for any future services booked.  If you don't show up to an appointment with a deposit attached, you will lose your deposit.
+          h3 Late Arrivals:
+          div Please call us if you think you will arrive late for your reserved appointment time. If possible, we will try to adjust our schedule. However, it is possible we may ask you to reschedule your visit to another day if it interferes with another client's appointment time.
+          .break
+          .break

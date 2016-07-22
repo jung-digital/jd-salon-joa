@@ -1,0 +1,26 @@
+@import "site/variables";
+@import "site/nonhomemods";
+
+h2 {
+  color: $pink;
+}
+
+h3 {
+  color: $blue-light;
+  font-weight: bold;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+
+  li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.break {
+  height: 70px;
+}

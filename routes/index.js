@@ -17,6 +17,7 @@ exports = module.exports = function(app) {
 	app.get('/gallery', routeWrap(routes.views.gallery, 'gallery'));
 	app.all('/services', routeWrap(routes.views.services, 'services'));
   app.all('/testimonials', routeWrap(routes.views.testimonials, 'testimonials'));
+  app.all('/cancellation', routeWrap(routes.views.cancellation, 'cancellation'));
 };
 
 function routeWrap (routeFunc, pageName)
