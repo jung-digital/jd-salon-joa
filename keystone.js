@@ -5,7 +5,7 @@ require('dotenv').load();
 // Require keystone
 var keystone = require('keystone');
 
-keystone.set('port', 5001);
+keystone.set('port', 5002);
 
 keystone.init({
 	'name': 'Salon Joa',
@@ -22,7 +22,7 @@ keystone.init({
 	'auth': true,
 	'user model': 'User',
 	'cookie secret': 'xG{X>z~Qxmc:%]SEeTD;=SUL<f!h)h<FM9RLTCg}hkhs-l1iO*bb2z"i6yVG7rsB',
-    'mongo': process.env.MONGO_URI || 'mongodb://23.253.173.33/salonjoa'
+    'mongo': process.env.MONGO_URI || 'mongodb://127.0.0.1:10017/salonjoa'
 });
 
 keystone.import('models');
