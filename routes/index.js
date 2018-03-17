@@ -32,7 +32,8 @@ function routeWrap (routeFunc, pageName)
       keystone.list('Image').model.find().exec(function (err, images) {
         res.locals.images = map(images, 'name');
 
-        res.locals.dynamicCSS = 'html {background-image:url(' + res.locals.images[pageName +'_bg'].image.url + ');}';
+        if (res.locals.images[pageName + '_bg']) 
+          res.locals.dynamicCSS = 'html {background-image:url(' + res.locals.images[pageName +'_bg'].image.url + ');}';
         
         routeFunc(req, res, view);  
       });

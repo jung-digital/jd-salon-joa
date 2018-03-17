@@ -28,7 +28,7 @@ block content
           .content-width
             a(id='salon')
             h1.ta-left ABOUT THE SALON.
-            .about!=contents.About_Us.content
+            .about!=contents.About_Us ? contents.About_Us.content : '[[About_Us]]'
             a(href='/testimonials')
               .read-testimonials-btn READ TESTIMONIALS
     .row.home-row.home-row-4

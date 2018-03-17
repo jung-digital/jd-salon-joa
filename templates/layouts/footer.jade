@@ -1,17 +1,17 @@
 .footer
   .centered
     .content-max-width.footer-box
-      a(href=links.Schedule.uri, target='_blank')
+      a(href=links.Schedule ? links.Schedule.uri : '[[links.Schedule]]', target='_blank')
         .book-btn BOOK ONLINE
       .address 7155 E. Colfax Ave. Denver, Colorado&nbsp; | &nbsp;303.284.9535
       .social
-        a(href=links.Facebook.uri, target='_blank')
+        a(href=links.Facebook ? links.Facebook.uri : '[[links.Facebook]]', target='_blank')
           i.fa.fa-facebook
-        a(href=links.Twitter.uri, target='_blank')
+        a(href=links.Twitter ? links.Twitter.uri : '[[links.Twitter]]', target='_blank')
           i.fa.fa-twitter
-        a(href=links.Instagram.uri, target='_blank')
+        a(href=links.Instagram ? links.Instagram.uri : '[[links.Instagram]]', target='_blank')
           i.fa.fa-instagram
-        a(href=links.Yelp.uri, target='_blank')
+        a(href=links.Yelp ? links.Yelp.uri : '[[links.Yelp.uri]]', target='_blank')
           i.fa.fa-yelp
       .sign-in
         ul.nav.navbar-nav

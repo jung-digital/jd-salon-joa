@@ -12,7 +12,7 @@ var Content = new keystone.List('Content', {
 
 Content.add({
   name: { type: String, required: true, default: 'content' },
-  content: { type: String, required: false },
+  content: { type: Types.Html, required: false },
   publishedDate: { type: Date, default: Date.now }
 });
 
